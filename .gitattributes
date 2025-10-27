@@ -1,0 +1,16 @@
+# 1) Normalizá SOLO texto (LF) por defecto
+*           text=auto eol=lf
+
+# 2) Nunca normalizar estos (binarios o “casi binarios”)
+*.pdf       -text
+*.png       -text
+*.jpg       -text
+*.jpeg      -text
+*.gif       -text
+*.ipynb     -text
+# Si querés ver diffs de SVG como texto, dejalo sin -text; si no, bloquealo:
+*.svg       -text
+
+# 3) Fuerza texto LF donde te convenga
+*.csv       text eol=lf
+*.py        text eol=lf

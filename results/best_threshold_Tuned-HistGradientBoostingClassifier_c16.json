@@ -1,0 +1,8 @@
+{
+  "model": "Tuned-HistGradientBoostingClassifier",
+  "criterion": "max F1 con recall ≥ 0.80",
+  "recall_target": 0.8,
+  "best_threshold": 0.47745004625716136,
+  "AP": 0.5957925186435455,
+  "ROC_AUC": 0.5604431312129533
+}

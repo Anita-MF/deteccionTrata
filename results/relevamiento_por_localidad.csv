@@ -1,0 +1,408 @@
+﻿consultante_provincia,consultante_localidad,intervenciones,confirmadas,tasa
+,,3104,1546,0.49806701030927836
+,ciudad autnoma de buenos aires,14,4,0.2857142857142857
+,santiago del estero,5,4,0.8
+,rosario,4,1,0.25
+,villa fiorito,3,0,0.0
+,buenos aires,2,1,0.5
+,ciudadela,2,1,0.5
+,la banda,2,0,0.0
+,lanus.,2,2,1.0
+,vicente lpez,2,1,0.5
+,wilde,2,0,0.0
+,berazategui,1,1,1.0
+,mar de ajo,1,1,1.0
+,mendoza,1,1,1.0
+,montecarlo,1,1,1.0
+,puerto esperanza,1,1,1.0
+,salta,1,1,1.0
+,san carlos de bariloche,1,1,1.0
+,san francisco solano,1,1,1.0
+,san roque,1,1,1.0
+,tandil,1,1,1.0
+,villa de merlo,1,0,0.0
+,william c. morris,1,0,0.0
+buenos aires,,1038,565,0.5443159922928709
+buenos aires,buenos aires,173,137,0.791907514450867
+buenos aires,mar del plata,31,18,0.5806451612903226
+buenos aires,la plata,24,22,0.9166666666666666
+buenos aires,ciudad autnoma de buenos aires,23,5,0.21739130434782608
+buenos aires,florencio varela,14,10,0.7142857142857143
+buenos aires,jos c. paz,14,8,0.5714285714285714
+buenos aires,san miguel,14,10,0.7142857142857143
+buenos aires,baha blanca,11,9,0.8181818181818182
+buenos aires,quilmes,10,7,0.7
+buenos aires,moreno,9,5,0.5555555555555556
+buenos aires,caba caba,8,0,0.0
+buenos aires,lomas de zamora,8,4,0.5
+buenos aires,berazategui,7,5,0.7142857142857143
+buenos aires,san miguel del monte,7,6,0.8571428571428571
+buenos aires,avellaneda,6,6,1.0
+buenos aires,malvinas argentinas,6,4,0.6666666666666666
+buenos aires,san fernando,6,3,0.5
+buenos aires,burzaco,5,4,0.8
+buenos aires,campana,5,4,0.8
+buenos aires,del viso,5,4,0.8
+buenos aires,ezeiza,5,4,0.8
+buenos aires,gregorio de laferrere,5,3,0.6
+buenos aires,san isidro,5,4,0.8
+buenos aires,zarate,5,5,1.0
+buenos aires,almirante brown,4,3,0.75
+buenos aires,bella vista,4,2,0.5
+buenos aires,caseros,4,2,0.5
+buenos aires,dolores,4,3,0.75
+buenos aires,gonzlez catn,4,4,1.0
+buenos aires,hurlingham,4,1,0.25
+buenos aires,la matanza,4,3,0.75
+buenos aires,monte grande,4,3,0.75
+buenos aires,morn,4,3,0.75
+buenos aires,palermo,4,3,0.75
+buenos aires,santa fe,4,1,0.25
+buenos aires,tigre,4,2,0.5
+buenos aires,villa fiorito,4,1,0.25
+buenos aires,boulogne,3,0,0.0
+buenos aires,ciudadela,3,2,0.6666666666666666
+buenos aires,grand bourg,3,2,0.6666666666666666
+buenos aires,jos len surez,3,3,1.0
+buenos aires,junn,3,1,0.3333333333333333
+buenos aires,merlo,3,2,0.6666666666666666
+buenos aires,olivos,3,2,0.6666666666666666
+buenos aires,pilar,3,2,0.6666666666666666
+buenos aires,remedios de escalada,3,2,0.6666666666666666
+buenos aires,rosario,3,0,0.0
+buenos aires,san francisco solano,3,2,0.6666666666666666
+buenos aires,san justo,3,2,0.6666666666666666
+buenos aires,san nicolas,3,3,1.0
+buenos aires,sierra de los padres,3,3,1.0
+buenos aires,vicente lpez,3,0,0.0
+buenos aires,villa madero,3,2,0.6666666666666666
+buenos aires,ayacucho,2,2,1.0
+buenos aires,azul,2,1,0.5
+buenos aires,bccar,2,1,0.5
+buenos aires,beln de escobar,2,1,0.5
+buenos aires,benavidez,2,0,0.0
+buenos aires,chacabuco,2,1,0.5
+buenos aires,claypole,2,1,0.5
+buenos aires,florida,2,1,0.5
+buenos aires,general rodrguez,2,0,0.0
+buenos aires,lans,2,2,1.0
+buenos aires,liniers,2,2,1.0
+buenos aires,lisandro olmos,2,2,1.0
+buenos aires,lomas del mirador,2,1,0.5
+buenos aires,magdalena,2,1,0.5
+buenos aires,mercedes,2,1,0.5
+buenos aires,olavarra,2,2,1.0
+buenos aires,pablo nogus,2,2,1.0
+buenos aires,rafael castillo,2,2,1.0
+buenos aires,ramos meja,2,2,1.0
+buenos aires,rauch,2,1,0.5
+buenos aires,san martn,2,2,1.0
+buenos aires,sourigues,2,0,0.0
+buenos aires,tandil,2,2,1.0
+buenos aires,temperley,2,2,1.0
+buenos aires,villa lynch,2,2,1.0
+buenos aires,villa tesei,2,0,0.0
+buenos aires,virrey del pino,2,2,1.0
+buenos aires,zrate,2,2,1.0
+buenos aires,9 de julio,1,1,1.0
+buenos aires,adrogu,1,0,0.0
+buenos aires,altos de san lorenzo,1,0,0.0
+buenos aires,balcarce,1,1,1.0
+buenos aires,banfield,1,1,1.0
+buenos aires,baradero,1,0,0.0
+buenos aires,bernal,1,1,1.0
+buenos aires,billinghurst,1,1,1.0
+buenos aires,caballito,1,1,1.0
+buenos aires,"capitn sarmiento, buenos aires",1,0,0.0
+buenos aires,carmen de patagones,1,1,1.0
+buenos aires,cauelas,1,0,0.0
+buenos aires,chascoms,1,0,0.0
+buenos aires,coln,1,0,0.0
+buenos aires,coronel dorrego,1,0,0.0
+buenos aires,devoto,1,1,1.0
+buenos aires,el jagel,1,1,1.0
+buenos aires,el talar,1,1,1.0
+buenos aires,esteban echeverria,1,1,1.0
+buenos aires,ezpeleta,1,1,1.0
+buenos aires,flores,1,0,0.0
+buenos aires,formosa,1,1,1.0
+buenos aires,francisco alvarez,1,1,1.0
+buenos aires,gandara,1,0,0.0
+buenos aires,general conesa,1,0,0.0
+buenos aires,gerli,1,1,1.0
+buenos aires,glew,1,1,1.0
+buenos aires,guamin,1,1,1.0
+buenos aires,guaymallen,1,1,1.0
+buenos aires,guernica,1,1,1.0
+buenos aires,henderson,1,1,1.0
+buenos aires,hilario ascasubi,1,1,1.0
+buenos aires,ingeniero adolfo sourdeaux,1,1,1.0
+buenos aires,ingeniero budge,1,1,1.0
+buenos aires,ingeniero maschwitz,1,0,0.0
+buenos aires,isidro casanova,1,1,1.0
+buenos aires,ituzaing,1,1,1.0
+buenos aires,la tablada,1,1,1.0
+buenos aires,lans este,1,0,0.0
+buenos aires,lans oeste,1,0,0.0
+buenos aires,lincoln,1,0,0.0
+buenos aires,loma hermosa,1,1,1.0
+buenos aires,los hornos,1,1,1.0
+buenos aires,los polvorines,1,1,1.0
+buenos aires,los troncos del talar,1,0,0.0
+buenos aires,mar de aj,1,0,0.0
+buenos aires,mar de ajo,1,0,0.0
+buenos aires,mataderos,1,1,1.0
+buenos aires,miramar,1,1,1.0
+buenos aires,monteagudo,1,1,1.0
+buenos aires,muiz,1,0,0.0
+buenos aires,munro,1,1,1.0
+buenos aires,necochea,1,1,1.0
+buenos aires,norberto de la riestra,1,1,1.0
+buenos aires,once,1,1,1.0
+buenos aires,pergamino,1,1,1.0
+buenos aires,pontevedra,1,0,0.0
+buenos aires,presidente derqui,1,0,0.0
+buenos aires,ramn castillo,1,0,0.0
+buenos aires,ricardo rojas,1,1,1.0
+buenos aires,saladillo,1,0,0.0
+buenos aires,san bernardo del tuy,1,0,0.0
+buenos aires,san carlos,1,1,1.0
+buenos aires,san clemente del tuyu,1,0,0.0
+buenos aires,san jos,1,1,1.0
+buenos aires,san nicols,1,1,1.0
+buenos aires,san nicols de los arroyos,1,1,1.0
+buenos aires,san vicente,1,1,1.0
+buenos aires,tapiales,1,0,0.0
+buenos aires,tres arroyos,1,1,1.0
+buenos aires,tres de febrero,1,0,0.0
+buenos aires,trujui,1,1,1.0
+buenos aires,vedia,1,0,0.0
+buenos aires,villa ballester,1,0,0.0
+buenos aires,villa centenario,1,0,0.0
+buenos aires,villa dominico,1,0,0.0
+buenos aires,villa elvira,1,1,1.0
+buenos aires,villa la florida,1,0,0.0
+buenos aires,villa luro,1,1,1.0
+buenos aires,villa martelli,1,1,1.0
+buenos aires,villa pueyrredon,1,1,1.0
+buenos aires,virreyes,1,1,1.0
+buenos aires,wilde,1,1,1.0
+catamarca,,32,12,0.375
+catamarca,san fernando del valle de catamarca,6,3,0.5
+catamarca,catamarca,5,2,0.4
+catamarca,beln,1,0,0.0
+catamarca,capital,1,1,1.0
+catamarca,departamento ambato,1,1,1.0
+catamarca,la banda,1,0,0.0
+catamarca,manantiales,1,0,0.0
+catamarca,san antonio,1,0,0.0
+chaco,,98,53,0.5408163265306123
+chaco,resistencia,16,12,0.75
+chaco,charata,2,1,0.5
+chaco,juan jos castelli,2,1,0.5
+chaco,avi tera,1,0,0.0
+chaco,fontana,1,1,1.0
+chaco,la leonesa,1,0,0.0
+chaco,los frentones,1,1,1.0
+chaco,presidencia roque senz pea,1,1,1.0
+chaco,puerto vilelas,1,1,1.0
+chubut,,41,21,0.5121951219512195
+chubut,rawson,5,5,1.0
+chubut,trelew,4,4,1.0
+chubut,comodoro rivadavia,3,1,0.3333333333333333
+chubut,esquel,3,3,1.0
+chubut,puerto madryn,2,2,1.0
+chubut,campo gallo,1,0,0.0
+ciudad autnoma de buenos aires,,599,347,0.5792988313856428
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,125,46,0.368
+ciudad autnoma de buenos aires,buenos aires,19,17,0.8947368421052632
+ciudad autnoma de buenos aires,la matanza,2,0,0.0
+ciudad autnoma de buenos aires,billinghurst,1,0,0.0
+ciudad autnoma de buenos aires,caballito,1,0,0.0
+ciudad autnoma de buenos aires,ciudad aut de bs as,1,1,1.0
+ciudad autnoma de buenos aires,el palomar,1,1,1.0
+ciudad autnoma de buenos aires,lugano,1,1,1.0
+ciudad autnoma de buenos aires,quilmes,1,0,0.0
+ciudad autnoma de buenos aires,san justo,1,0,0.0
+ciudad autnoma de buenos aires,v. luro,1,0,0.0
+ciudad autnoma de buenos aires,vicente lpez,1,1,1.0
+ciudad autnoma de buenos aires,villa dominico,1,0,0.0
+ciudad autnoma de buenos aires,villa martelli,1,1,1.0
+corrientes,,66,36,0.5454545454545454
+corrientes,corrientes,11,7,0.6363636363636364
+corrientes,paso de los libres,2,2,1.0
+corrientes,ciudad de corrientes,1,1,1.0
+corrientes,goya,1,1,1.0
+corrientes,guavirav,1,1,1.0
+corrientes,monte caseros,1,0,0.0
+crdoba,,217,125,0.576036866359447
+crdoba,crdoba,43,25,0.5813953488372093
+crdoba,dean funes,7,3,0.42857142857142855
+crdoba,ciudad autnoma de buenos aires,4,4,1.0
+crdoba,ro cuarto,3,3,1.0
+crdoba,ro tercero,3,3,1.0
+crdoba,capilla del monte,2,1,0.5
+crdoba,crdoba capital,2,2,1.0
+crdoba,den funes,2,0,0.0
+crdoba,marcos jurez,2,2,1.0
+crdoba,san marcos sierras,2,1,0.5
+crdoba,alta gracia,1,1,1.0
+crdoba,jesus mara,1,1,1.0
+crdoba,malvinas argentinas,1,1,1.0
+crdoba,melincue,1,0,0.0
+crdoba,ro primero,1,0,0.0
+crdoba,san francisco,1,0,0.0
+crdoba,sebastian elcano,1,1,1.0
+crdoba,villa carlos paz,1,1,1.0
+entre ros,,77,35,0.45454545454545453
+entre ros,paran,6,4,0.6666666666666666
+entre ros,concordia,4,2,0.5
+entre ros,concepcin del uruguay,3,1,0.3333333333333333
+entre ros,villaguay,2,1,0.5
+entre ros,diamante,1,1,1.0
+entre ros,gualeguay,1,1,1.0
+entre ros,gualeguaych,1,1,1.0
+entre ros,parana,1,1,1.0
+entre ros,san jos,1,1,1.0
+entre ros,victoria,1,1,1.0
+formosa,,33,11,0.3333333333333333
+formosa,formosa,11,6,0.5454545454545454
+formosa,clorinda,9,4,0.4444444444444444
+formosa,ibarreta,1,0,0.0
+jujuy,,34,20,0.5882352941176471
+jujuy,san salvador de jujuy,18,13,0.7222222222222222
+jujuy,jujuy,3,3,1.0
+jujuy,pampa blanca,1,0,0.0
+jujuy,san pedro,1,0,0.0
+la pampa,,7,4,0.5714285714285714
+la pampa,santa rosa,2,2,1.0
+la pampa,guatrach,1,0,0.0
+la pampa,veinticinco de mayo,1,1,1.0
+la rioja,,27,23,0.8518518518518519
+la rioja,la rioja,4,4,1.0
+mendoza,,124,68,0.5483870967741935
+mendoza,mendoza,23,19,0.8260869565217391
+mendoza,maip,5,3,0.6
+mendoza,godoy cruz,4,3,0.75
+mendoza,guaymalln,4,4,1.0
+mendoza,las heras,3,2,0.6666666666666666
+mendoza,san rafael,2,2,1.0
+mendoza,ciudad autnoma de buenos aires,1,1,1.0
+mendoza,coquimbito,1,0,0.0
+mendoza,eduardo castex,1,1,1.0
+mendoza,guaymallen,1,0,0.0
+mendoza,junn,1,1,1.0
+mendoza,lavalle,1,0,0.0
+mendoza,paso fronterizo crsito redentor,1,1,1.0
+mendoza,rivadavia,1,1,1.0
+mendoza,rodeo de la cruz,1,0,0.0
+mendoza,san jos,1,1,1.0
+mendoza,san martn,1,0,0.0
+mendoza,tunuyn,1,1,1.0
+misiones,,73,42,0.5753424657534246
+misiones,posadas,10,10,1.0
+misiones,ober,3,2,0.6666666666666666
+misiones,comandante andresito,2,2,1.0
+misiones,eldorado,2,1,0.5
+misiones,apstoles,1,1,1.0
+misiones,campo grande,1,0,0.0
+misiones,ezeiza,1,1,1.0
+misiones,jardn amrica,1,0,0.0
+misiones,leandro n. alem,1,0,0.0
+misiones,misiones,1,0,0.0
+misiones,puerto iguaz,1,1,1.0
+misiones,san antonio,1,0,0.0
+misiones,santa ana,1,1,1.0
+neuqun,,87,47,0.5402298850574713
+neuqun,neuqun,13,9,0.6923076923076923
+neuqun,neuquen,4,4,1.0
+neuqun,buta ranquil,1,1,1.0
+neuqun,centenario,1,1,1.0
+neuqun,villa el chocn,1,0,0.0
+neuqun,villa la angostura,1,1,1.0
+neuqun,vista alegre norte,1,0,0.0
+neuqun,zapala,1,0,0.0
+ro negro,,123,35,0.2845528455284553
+ro negro,san carlos de bariloche,8,5,0.625
+ro negro,cipolletti,3,2,0.6666666666666666
+ro negro,el bolsn,3,2,0.6666666666666666
+ro negro,coronel belisle,1,1,1.0
+salta,,101,61,0.6039603960396039
+salta,salta,20,13,0.65
+salta,orn,2,2,1.0
+salta,san ramon de la nueva oran,2,2,1.0
+salta,aguaray,1,0,0.0
+salta,capital,1,1,1.0
+salta,ciudad autnoma de buenos aires,1,0,0.0
+salta,rosario de lerma,1,1,1.0
+salta,santa luca,1,0,0.0
+salta,tacuil,1,1,1.0
+salta,tartagal,1,0,0.0
+san juan,,35,21,0.6
+san juan,san juan,4,4,1.0
+san juan,capital,2,1,0.5
+san juan,media agua,1,1,1.0
+san juan,pocito,1,1,1.0
+san juan,rivadavia,1,1,1.0
+san juan,rodeo,1,1,1.0
+san luis,,20,13,0.65
+san luis,san luis,11,8,0.7272727272727273
+san luis,villa mercedes,5,4,0.8
+san luis,villa de merlo,2,1,0.5
+san luis,merlo,1,1,1.0
+santa cruz,,13,7,0.5384615384615384
+santa cruz,rio gallegos,3,3,1.0
+santa cruz,ro gallegos,3,2,0.6666666666666666
+santa cruz,pico truncado,1,0,0.0
+santa fe,,198,106,0.5353535353535354
+santa fe,rosario,72,38,0.5277777777777778
+santa fe,santa fe,18,13,0.7222222222222222
+santa fe,glvez,3,1,0.3333333333333333
+santa fe,santo tom,3,2,0.6666666666666666
+santa fe,granadero baigorria,2,1,0.5
+santa fe,villa gobernador galvez,2,2,1.0
+santa fe,coronda,1,1,1.0
+santa fe,el rabn,1,1,1.0
+santa fe,florencia,1,1,1.0
+santa fe,funes,1,1,1.0
+santa fe,gaboto,1,1,1.0
+santa fe,humberto i,1,0,0.0
+santa fe,las colonias,1,1,1.0
+santa fe,san lorenzo,1,1,1.0
+santa fe,san nicols de los arroyos,1,0,0.0
+santa fe,santa fe de la vera cruz,1,1,1.0
+santa fe,venado tuerto,1,1,1.0
+santa fe,vera,1,0,0.0
+santiago del estero,,45,31,0.6888888888888889
+santiago del estero,la banda,12,3,0.25
+santiago del estero,santiago del estero,9,5,0.5555555555555556
+santiago del estero,donadeu,4,0,0.0
+santiago del estero,termas de ro hondo,4,3,0.75
+santiago del estero,ciudad autnoma de buenos aires,2,0,0.0
+santiago del estero,villa ro hondo,2,2,1.0
+santiago del estero,aguirre,1,1,1.0
+santiago del estero,capital,1,1,1.0
+santiago del estero,el quince,1,1,1.0
+santiago del estero,termas de rio hondo,1,1,1.0
+santiago del estero,villa atamisqui,1,1,1.0
+tierra del fuego,,19,13,0.6842105263157895
+tierra del fuego,ushuaia,6,6,1.0
+tierra del fuego,rio grande,2,2,1.0
+tierra del fuego,paran,1,0,0.0
+tierra del fuego,ro grande,1,0,0.0
+tierra del fuego,santiago del estero,1,1,1.0
+tucumn,,173,72,0.4161849710982659
+tucumn,san miguel de tucumn,25,21,0.84
+tucumn,alderetes,1,1,1.0
+tucumn,bella vista,1,1,1.0
+tucumn,ciudad autnoma de buenos aires,1,1,1.0
+tucumn,concepcin,1,0,0.0
+tucumn,ingenio nueva baviera,1,0,0.0
+tucumn,juan bautista alberdi,1,0,0.0
+tucumn,las talitas,1,0,0.0
+tucumn,lules,1,0,0.0
+tucumn,salta,1,1,1.0
+tucumn,sm tuc,1,0,0.0
+tucumn,taf viejo,1,1,1.0
+tucumn,tucumn,1,0,0.0
+tucumn,villa de leales,1,0,0.0

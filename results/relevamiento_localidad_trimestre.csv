@@ -1,0 +1,682 @@
+﻿consultante_provincia,consultante_localidad,anio,trimestre,trimestre_lbl,intervenciones,confirmadas,tasa
+,,2020,1,T1,56,19,0.3392857142857143
+,,2020,2,T2,80,32,0.4
+,,2020,3,T3,56,19,0.3392857142857143
+,,2020,4,T4,62,31,0.5
+,,2021,1,T1,116,61,0.5258620689655172
+,,2021,2,T2,110,52,0.4727272727272727
+,,2021,3,T3,122,47,0.38524590163934425
+,,2021,4,T4,84,39,0.4642857142857143
+,,2022,1,T1,25,14,0.56
+,,2022,2,T2,41,14,0.34146341463414637
+,,2022,3,T3,29,20,0.6896551724137931
+,,2022,4,T4,29,9,0.3103448275862069
+,,2023,1,T1,63,41,0.6507936507936508
+,,2023,2,T2,49,27,0.5510204081632653
+,,2023,3,T3,47,28,0.5957446808510638
+,,2023,4,T4,39,26,0.6666666666666666
+,,2024,1,T1,48,28,0.5833333333333334
+,,2024,2,T2,50,25,0.5
+,,2024,3,T3,37,15,0.40540540540540543
+,,2024,4,T4,49,30,0.6122448979591837
+,buenos aires,2023,2,T2,1,0,0.0
+,ciudad autnoma de buenos aires,2022,2,T2,2,1,0.5
+,ciudad autnoma de buenos aires,2023,1,T1,1,0,0.0
+,ciudad autnoma de buenos aires,2023,3,T3,1,0,0.0
+,ciudad autnoma de buenos aires,2023,4,T4,1,1,1.0
+,la banda,2022,3,T3,1,0,0.0
+,lanus.,2024,3,T3,2,2,1.0
+,mendoza,2023,1,T1,1,1,1.0
+,puerto esperanza,2024,4,T4,1,1,1.0
+,rosario,2023,1,T1,1,1,1.0
+,san carlos de bariloche,2023,2,T2,1,1,1.0
+,san francisco solano,2023,2,T2,1,1,1.0
+,santiago del estero,2022,1,T1,1,1,1.0
+,santiago del estero,2022,2,T2,1,1,1.0
+,santiago del estero,2022,3,T3,1,0,0.0
+,santiago del estero,2024,3,T3,1,1,1.0
+,tandil,2024,1,T1,1,1,1.0
+,villa de merlo,2024,1,T1,1,0,0.0
+,villa fiorito,2023,1,T1,1,0,0.0
+,wilde,2023,4,T4,1,0,0.0
+,william c. morris,2023,1,T1,1,0,0.0
+buenos aires,,2020,3,T3,1,1,1.0
+buenos aires,,2020,4,T4,1,1,1.0
+buenos aires,,2021,2,T2,1,0,0.0
+buenos aires,,2022,1,T1,20,9,0.45
+buenos aires,,2022,2,T2,32,19,0.59375
+buenos aires,,2022,3,T3,27,14,0.5185185185185185
+buenos aires,,2022,4,T4,21,8,0.38095238095238093
+buenos aires,,2023,1,T1,35,21,0.6
+buenos aires,,2023,2,T2,43,23,0.5348837209302325
+buenos aires,,2023,3,T3,42,19,0.4523809523809524
+buenos aires,,2023,4,T4,34,17,0.5
+buenos aires,,2024,1,T1,43,26,0.6046511627906976
+buenos aires,,2024,2,T2,35,18,0.5142857142857142
+buenos aires,,2024,3,T3,42,19,0.4523809523809524
+buenos aires,,2024,4,T4,50,29,0.58
+buenos aires,9 de julio,2021,1,T1,1,1,1.0
+buenos aires,almirante brown,2020,2,T2,1,1,1.0
+buenos aires,almirante brown,2022,4,T4,1,0,0.0
+buenos aires,altos de san lorenzo,2020,4,T4,1,0,0.0
+buenos aires,avellaneda,2021,2,T2,1,1,1.0
+buenos aires,ayacucho,2021,1,T1,1,1,1.0
+buenos aires,azul,2020,2,T2,1,0,0.0
+buenos aires,baha blanca,2020,1,T1,2,2,1.0
+buenos aires,baha blanca,2020,2,T2,1,0,0.0
+buenos aires,baha blanca,2020,4,T4,1,1,1.0
+buenos aires,baha blanca,2021,4,T4,1,1,1.0
+buenos aires,baha blanca,2022,3,T3,1,1,1.0
+buenos aires,balcarce,2022,4,T4,1,1,1.0
+buenos aires,banfield,2023,4,T4,1,1,1.0
+buenos aires,baradero,2020,3,T3,1,0,0.0
+buenos aires,bccar,2021,3,T3,1,1,1.0
+buenos aires,bella vista,2020,1,T1,1,0,0.0
+buenos aires,bella vista,2024,2,T2,1,1,1.0
+buenos aires,bella vista,2024,3,T3,1,0,0.0
+buenos aires,beln de escobar,2021,3,T3,1,1,1.0
+buenos aires,benavidez,2020,4,T4,1,0,0.0
+buenos aires,benavidez,2022,3,T3,1,0,0.0
+buenos aires,berazategui,2020,3,T3,1,0,0.0
+buenos aires,boulogne,2020,1,T1,2,0,0.0
+buenos aires,buenos aires,2020,1,T1,19,11,0.5789473684210527
+buenos aires,buenos aires,2020,2,T2,8,6,0.75
+buenos aires,buenos aires,2020,3,T3,8,6,0.75
+buenos aires,buenos aires,2020,4,T4,7,5,0.7142857142857143
+buenos aires,buenos aires,2021,1,T1,11,10,0.9090909090909091
+buenos aires,buenos aires,2021,2,T2,2,2,1.0
+buenos aires,buenos aires,2021,3,T3,3,3,1.0
+buenos aires,buenos aires,2021,4,T4,6,6,1.0
+buenos aires,buenos aires,2022,2,T2,1,1,1.0
+buenos aires,buenos aires,2022,3,T3,1,0,0.0
+buenos aires,buenos aires,2022,4,T4,5,5,1.0
+buenos aires,buenos aires,2023,1,T1,1,1,1.0
+buenos aires,buenos aires,2024,1,T1,1,0,0.0
+buenos aires,burzaco,2020,2,T2,1,1,1.0
+buenos aires,burzaco,2020,3,T3,1,1,1.0
+buenos aires,caba caba,2020,4,T4,1,0,0.0
+buenos aires,caba caba,2021,3,T3,1,0,0.0
+buenos aires,caba caba,2021,4,T4,2,0,0.0
+buenos aires,caballito,2021,4,T4,1,1,1.0
+buenos aires,campana,2020,1,T1,1,1,1.0
+buenos aires,campana,2020,2,T2,1,1,1.0
+buenos aires,"capitn sarmiento, buenos aires",2020,2,T2,1,0,0.0
+buenos aires,carmen de patagones,2020,2,T2,1,1,1.0
+buenos aires,cauelas,2020,4,T4,1,0,0.0
+buenos aires,chacabuco,2020,3,T3,1,1,1.0
+buenos aires,chascoms,2020,3,T3,1,0,0.0
+buenos aires,ciudad autnoma de buenos aires,2021,1,T1,3,2,0.6666666666666666
+buenos aires,ciudad autnoma de buenos aires,2021,3,T3,2,0,0.0
+buenos aires,ciudad autnoma de buenos aires,2022,1,T1,5,2,0.4
+buenos aires,ciudad autnoma de buenos aires,2022,2,T2,1,0,0.0
+buenos aires,ciudad autnoma de buenos aires,2022,3,T3,1,0,0.0
+buenos aires,ciudad autnoma de buenos aires,2022,4,T4,1,0,0.0
+buenos aires,ciudad autnoma de buenos aires,2023,2,T2,1,0,0.0
+buenos aires,ciudadela,2021,4,T4,1,1,1.0
+buenos aires,claypole,2020,3,T3,1,1,1.0
+buenos aires,coronel dorrego,2024,4,T4,1,0,0.0
+buenos aires,del viso,2020,1,T1,2,1,0.5
+buenos aires,dolores,2022,3,T3,1,1,1.0
+buenos aires,dolores,2022,4,T4,1,1,1.0
+buenos aires,ezeiza,2020,2,T2,1,1,1.0
+buenos aires,ezeiza,2022,3,T3,1,1,1.0
+buenos aires,ezeiza,2022,4,T4,1,1,1.0
+buenos aires,ezeiza,2023,3,T3,1,1,1.0
+buenos aires,florencio varela,2020,1,T1,1,1,1.0
+buenos aires,florencio varela,2020,2,T2,1,1,1.0
+buenos aires,florencio varela,2020,3,T3,1,1,1.0
+buenos aires,florencio varela,2020,4,T4,1,0,0.0
+buenos aires,florencio varela,2021,2,T2,1,1,1.0
+buenos aires,florencio varela,2021,4,T4,1,1,1.0
+buenos aires,gandara,2020,4,T4,1,0,0.0
+buenos aires,general rodrguez,2020,1,T1,1,0,0.0
+buenos aires,general rodrguez,2020,4,T4,1,0,0.0
+buenos aires,gerli,2020,2,T2,1,1,1.0
+buenos aires,glew,2021,2,T2,1,1,1.0
+buenos aires,gonzlez catn,2020,2,T2,1,1,1.0
+buenos aires,gonzlez catn,2021,3,T3,1,1,1.0
+buenos aires,grand bourg,2020,3,T3,1,1,1.0
+buenos aires,grand bourg,2022,4,T4,1,1,1.0
+buenos aires,gregorio de laferrere,2020,1,T1,1,1,1.0
+buenos aires,gregorio de laferrere,2022,4,T4,1,0,0.0
+buenos aires,henderson,2022,1,T1,1,1,1.0
+buenos aires,hurlingham,2020,2,T2,1,1,1.0
+buenos aires,ingeniero adolfo sourdeaux,2023,3,T3,1,1,1.0
+buenos aires,ingeniero budge,2020,4,T4,1,1,1.0
+buenos aires,isidro casanova,2024,2,T2,1,1,1.0
+buenos aires,ituzaing,2021,1,T1,1,1,1.0
+buenos aires,jos c. paz,2020,1,T1,2,2,1.0
+buenos aires,jos c. paz,2020,2,T2,1,0,0.0
+buenos aires,jos c. paz,2020,3,T3,1,0,0.0
+buenos aires,jos c. paz,2021,4,T4,1,1,1.0
+buenos aires,jos c. paz,2022,2,T2,1,1,1.0
+buenos aires,jos c. paz,2022,3,T3,1,0,0.0
+buenos aires,la matanza,2020,2,T2,2,2,1.0
+buenos aires,la matanza,2021,1,T1,1,1,1.0
+buenos aires,la plata,2020,1,T1,1,1,1.0
+buenos aires,la plata,2020,2,T2,1,1,1.0
+buenos aires,la plata,2020,3,T3,1,1,1.0
+buenos aires,la plata,2020,4,T4,1,1,1.0
+buenos aires,la plata,2021,2,T2,1,1,1.0
+buenos aires,la plata,2021,3,T3,1,1,1.0
+buenos aires,la plata,2021,4,T4,1,1,1.0
+buenos aires,la plata,2022,1,T1,1,1,1.0
+buenos aires,la plata,2022,2,T2,1,1,1.0
+buenos aires,la tablada,2021,1,T1,1,1,1.0
+buenos aires,lans,2022,2,T2,1,1,1.0
+buenos aires,lans,2022,3,T3,1,1,1.0
+buenos aires,lans este,2020,2,T2,1,0,0.0
+buenos aires,lans oeste,2020,1,T1,1,0,0.0
+buenos aires,lincoln,2021,1,T1,1,0,0.0
+buenos aires,lisandro olmos,2020,3,T3,1,1,1.0
+buenos aires,lomas de zamora,2020,2,T2,1,0,0.0
+buenos aires,lomas de zamora,2020,3,T3,1,0,0.0
+buenos aires,lomas de zamora,2021,4,T4,1,0,0.0
+buenos aires,lomas del mirador,2020,1,T1,1,0,0.0
+buenos aires,los troncos del talar,2020,4,T4,1,0,0.0
+buenos aires,magdalena,2020,1,T1,1,1,1.0
+buenos aires,malvinas argentinas,2021,1,T1,1,1,1.0
+buenos aires,malvinas argentinas,2021,4,T4,1,1,1.0
+buenos aires,malvinas argentinas,2023,2,T2,1,0,0.0
+buenos aires,mar de ajo,2024,4,T4,1,0,0.0
+buenos aires,mar del plata,2020,1,T1,2,0,0.0
+buenos aires,mar del plata,2020,2,T2,1,1,1.0
+buenos aires,mar del plata,2020,3,T3,4,1,0.25
+buenos aires,mar del plata,2020,4,T4,1,1,1.0
+buenos aires,mar del plata,2021,4,T4,1,1,1.0
+buenos aires,mar del plata,2022,1,T1,1,1,1.0
+buenos aires,mar del plata,2022,3,T3,1,1,1.0
+buenos aires,mar del plata,2023,3,T3,1,1,1.0
+buenos aires,mercedes,2020,2,T2,1,0,0.0
+buenos aires,merlo,2021,4,T4,1,1,1.0
+buenos aires,merlo,2024,4,T4,1,0,0.0
+buenos aires,miramar,2022,4,T4,1,1,1.0
+buenos aires,monte grande,2022,1,T1,1,1,1.0
+buenos aires,moreno,2020,1,T1,1,0,0.0
+buenos aires,moreno,2020,3,T3,1,1,1.0
+buenos aires,moreno,2021,1,T1,1,1,1.0
+buenos aires,morn,2020,2,T2,2,1,0.5
+buenos aires,morn,2022,2,T2,1,1,1.0
+buenos aires,muiz,2022,4,T4,1,0,0.0
+buenos aires,munro,2022,4,T4,1,1,1.0
+buenos aires,olivos,2020,4,T4,2,2,1.0
+buenos aires,pablo nogus,2021,4,T4,1,1,1.0
+buenos aires,palermo,2021,4,T4,1,1,1.0
+buenos aires,pergamino,2022,1,T1,1,1,1.0
+buenos aires,pilar,2020,3,T3,1,0,0.0
+buenos aires,pilar,2022,4,T4,1,1,1.0
+buenos aires,pontevedra,2020,2,T2,1,0,0.0
+buenos aires,quilmes,2021,1,T1,1,1,1.0
+buenos aires,quilmes,2021,2,T2,1,1,1.0
+buenos aires,quilmes,2022,4,T4,1,1,1.0
+buenos aires,rafael castillo,2021,3,T3,2,2,1.0
+buenos aires,ramos meja,2020,1,T1,1,1,1.0
+buenos aires,ramos meja,2020,4,T4,1,1,1.0
+buenos aires,rauch,2020,1,T1,1,0,0.0
+buenos aires,remedios de escalada,2020,1,T1,1,0,0.0
+buenos aires,remedios de escalada,2021,4,T4,1,1,1.0
+buenos aires,ricardo rojas,2021,3,T3,1,1,1.0
+buenos aires,rosario,2020,3,T3,1,0,0.0
+buenos aires,san fernando,2022,4,T4,1,0,0.0
+buenos aires,san fernando,2023,2,T2,1,0,0.0
+buenos aires,san isidro,2020,4,T4,1,1,1.0
+buenos aires,san justo,2021,2,T2,1,1,1.0
+buenos aires,san martn,2021,3,T3,1,1,1.0
+buenos aires,san martn,2022,3,T3,1,1,1.0
+buenos aires,san miguel,2020,2,T2,2,2,1.0
+buenos aires,san miguel,2020,4,T4,1,1,1.0
+buenos aires,san miguel,2021,1,T1,1,1,1.0
+buenos aires,san miguel,2023,2,T2,2,1,0.5
+buenos aires,san miguel,2024,1,T1,1,1,1.0
+buenos aires,san miguel del monte,2020,2,T2,3,3,1.0
+buenos aires,san miguel del monte,2020,3,T3,1,1,1.0
+buenos aires,san nicolas,2021,3,T3,1,1,1.0
+buenos aires,san nicols de los arroyos,2022,2,T2,1,1,1.0
+buenos aires,santa fe,2022,1,T1,2,1,0.5
+buenos aires,santa fe,2024,1,T1,1,0,0.0
+buenos aires,sierra de los padres,2022,1,T1,1,1,1.0
+buenos aires,sierra de los padres,2022,4,T4,1,1,1.0
+buenos aires,tandil,2021,3,T3,1,1,1.0
+buenos aires,temperley,2020,2,T2,1,1,1.0
+buenos aires,temperley,2022,4,T4,1,1,1.0
+buenos aires,tigre,2020,2,T2,1,1,1.0
+buenos aires,tigre,2022,1,T1,1,0,0.0
+buenos aires,trujui,2020,1,T1,1,1,1.0
+buenos aires,villa ballester,2020,1,T1,1,0,0.0
+buenos aires,villa centenario,2021,4,T4,1,0,0.0
+buenos aires,villa fiorito,2021,1,T1,1,1,1.0
+buenos aires,villa fiorito,2023,2,T2,1,0,0.0
+buenos aires,villa la florida,2021,1,T1,1,0,0.0
+buenos aires,villa luro,2021,3,T3,1,1,1.0
+buenos aires,villa lynch,2021,2,T2,1,1,1.0
+buenos aires,villa madero,2020,2,T2,1,1,1.0
+buenos aires,villa pueyrredon,2020,1,T1,1,1,1.0
+buenos aires,virrey del pino,2020,1,T1,1,1,1.0
+buenos aires,virrey del pino,2022,2,T2,1,1,1.0
+buenos aires,zarate,2020,4,T4,1,1,1.0
+buenos aires,zarate,2021,4,T4,1,1,1.0
+catamarca,,2022,2,T2,2,1,0.5
+catamarca,,2022,3,T3,1,0,0.0
+catamarca,,2023,1,T1,1,0,0.0
+catamarca,,2023,2,T2,3,2,0.6666666666666666
+catamarca,,2023,4,T4,4,1,0.25
+catamarca,,2024,1,T1,2,1,0.5
+catamarca,,2024,3,T3,1,1,1.0
+catamarca,capital,2021,4,T4,1,1,1.0
+catamarca,catamarca,2020,1,T1,3,0,0.0
+catamarca,catamarca,2022,1,T1,1,1,1.0
+catamarca,la banda,2022,4,T4,1,0,0.0
+catamarca,san antonio,2020,2,T2,1,0,0.0
+catamarca,san fernando del valle de catamarca,2020,4,T4,2,1,0.5
+catamarca,san fernando del valle de catamarca,2022,2,T2,1,0,0.0
+catamarca,san fernando del valle de catamarca,2022,3,T3,1,0,0.0
+chaco,,2021,3,T3,1,1,1.0
+chaco,,2022,1,T1,2,1,0.5
+chaco,,2022,2,T2,1,0,0.0
+chaco,,2022,3,T3,1,0,0.0
+chaco,,2022,4,T4,3,1,0.3333333333333333
+chaco,,2023,1,T1,3,3,1.0
+chaco,,2023,2,T2,2,1,0.5
+chaco,,2023,3,T3,4,2,0.5
+chaco,,2023,4,T4,4,4,1.0
+chaco,,2024,1,T1,7,5,0.7142857142857143
+chaco,,2024,2,T2,2,0,0.0
+chaco,,2024,3,T3,9,5,0.5555555555555556
+chaco,,2024,4,T4,3,1,0.3333333333333333
+chaco,juan jos castelli,2022,3,T3,2,1,0.5
+chaco,los frentones,2021,1,T1,1,1,1.0
+chaco,presidencia roque senz pea,2023,1,T1,1,1,1.0
+chaco,resistencia,2021,2,T2,1,1,1.0
+chaco,resistencia,2021,3,T3,4,4,1.0
+chaco,resistencia,2022,4,T4,1,1,1.0
+chubut,,2022,2,T2,1,1,1.0
+chubut,,2022,4,T4,1,0,0.0
+chubut,,2023,1,T1,1,0,0.0
+chubut,,2023,2,T2,1,1,1.0
+chubut,,2023,3,T3,2,0,0.0
+chubut,,2024,2,T2,1,0,0.0
+chubut,,2024,3,T3,2,2,1.0
+chubut,campo gallo,2023,1,T1,1,0,0.0
+chubut,comodoro rivadavia,2020,3,T3,1,0,0.0
+chubut,esquel,2020,2,T2,1,1,1.0
+chubut,esquel,2020,3,T3,2,2,1.0
+chubut,rawson,2020,2,T2,2,2,1.0
+chubut,rawson,2021,4,T4,1,1,1.0
+chubut,trelew,2022,3,T3,1,1,1.0
+ciudad autnoma de buenos aires,,2022,1,T1,15,9,0.6
+ciudad autnoma de buenos aires,,2022,2,T2,20,14,0.7
+ciudad autnoma de buenos aires,,2022,3,T3,12,8,0.6666666666666666
+ciudad autnoma de buenos aires,,2022,4,T4,15,6,0.4
+ciudad autnoma de buenos aires,,2023,1,T1,16,8,0.5
+ciudad autnoma de buenos aires,,2023,2,T2,18,12,0.6666666666666666
+ciudad autnoma de buenos aires,,2023,3,T3,23,11,0.4782608695652174
+ciudad autnoma de buenos aires,,2023,4,T4,19,13,0.6842105263157895
+ciudad autnoma de buenos aires,,2024,1,T1,12,9,0.75
+ciudad autnoma de buenos aires,,2024,2,T2,29,13,0.4482758620689655
+ciudad autnoma de buenos aires,,2024,3,T3,28,18,0.6428571428571429
+ciudad autnoma de buenos aires,,2024,4,T4,34,20,0.5882352941176471
+ciudad autnoma de buenos aires,buenos aires,2022,1,T1,2,2,1.0
+ciudad autnoma de buenos aires,buenos aires,2023,3,T3,1,1,1.0
+ciudad autnoma de buenos aires,buenos aires,2024,3,T3,1,0,0.0
+ciudad autnoma de buenos aires,buenos aires,2024,4,T4,2,1,0.5
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2020,1,T1,3,2,0.6666666666666666
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2020,2,T2,4,1,0.25
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2020,3,T3,2,1,0.5
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2020,4,T4,1,1,1.0
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2021,1,T1,1,0,0.0
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2021,2,T2,3,3,1.0
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2021,3,T3,5,3,0.6
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2021,4,T4,2,0,0.0
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2022,1,T1,3,2,0.6666666666666666
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2022,2,T2,2,1,0.5
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2022,3,T3,5,3,0.6
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2022,4,T4,8,1,0.125
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2023,1,T1,2,1,0.5
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2023,2,T2,2,1,0.5
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2023,3,T3,5,2,0.4
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2023,4,T4,1,0,0.0
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2024,1,T1,4,0,0.0
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2024,2,T2,2,0,0.0
+ciudad autnoma de buenos aires,ciudad autnoma de buenos aires,2024,4,T4,3,1,0.3333333333333333
+ciudad autnoma de buenos aires,el palomar,2023,3,T3,1,1,1.0
+ciudad autnoma de buenos aires,la matanza,2024,4,T4,1,0,0.0
+ciudad autnoma de buenos aires,villa martelli,2023,3,T3,1,1,1.0
+corrientes,,2022,2,T2,2,2,1.0
+corrientes,,2022,3,T3,1,0,0.0
+corrientes,,2022,4,T4,2,1,0.5
+corrientes,,2023,1,T1,1,0,0.0
+corrientes,,2023,2,T2,2,0,0.0
+corrientes,,2023,3,T3,5,2,0.4
+corrientes,,2023,4,T4,1,1,1.0
+corrientes,,2024,1,T1,7,5,0.7142857142857143
+corrientes,,2024,2,T2,3,2,0.6666666666666666
+corrientes,,2024,3,T3,3,2,0.6666666666666666
+corrientes,,2024,4,T4,3,3,1.0
+corrientes,corrientes,2020,3,T3,1,0,0.0
+corrientes,corrientes,2020,4,T4,1,1,1.0
+corrientes,guavirav,2020,2,T2,1,1,1.0
+crdoba,,2020,1,T1,1,0,0.0
+crdoba,,2022,1,T1,3,3,1.0
+crdoba,,2022,2,T2,1,0,0.0
+crdoba,,2022,3,T3,7,5,0.7142857142857143
+crdoba,,2022,4,T4,9,3,0.3333333333333333
+crdoba,,2023,1,T1,4,2,0.5
+crdoba,,2023,2,T2,8,4,0.5
+crdoba,,2023,3,T3,13,9,0.6923076923076923
+crdoba,,2023,4,T4,5,2,0.4
+crdoba,,2024,1,T1,9,4,0.4444444444444444
+crdoba,,2024,2,T2,2,1,0.5
+crdoba,,2024,3,T3,10,5,0.5
+crdoba,,2024,4,T4,8,7,0.875
+crdoba,capilla del monte,2022,4,T4,1,0,0.0
+crdoba,ciudad autnoma de buenos aires,2024,4,T4,3,3,1.0
+crdoba,crdoba,2020,1,T1,3,0,0.0
+crdoba,crdoba,2020,2,T2,4,1,0.25
+crdoba,crdoba,2020,3,T3,3,2,0.6666666666666666
+crdoba,crdoba,2020,4,T4,1,0,0.0
+crdoba,crdoba,2021,3,T3,1,0,0.0
+crdoba,crdoba,2022,1,T1,2,2,1.0
+crdoba,crdoba,2022,2,T2,1,1,1.0
+crdoba,crdoba capital,2024,4,T4,1,1,1.0
+crdoba,den funes,2022,2,T2,1,0,0.0
+crdoba,malvinas argentinas,2020,4,T4,1,1,1.0
+crdoba,ro cuarto,2020,1,T1,1,1,1.0
+crdoba,ro tercero,2020,1,T1,1,1,1.0
+crdoba,ro tercero,2020,2,T2,1,1,1.0
+crdoba,san marcos sierras,2023,4,T4,1,0,0.0
+crdoba,sebastian elcano,2021,2,T2,1,1,1.0
+entre ros,,2020,1,T1,1,0,0.0
+entre ros,,2020,2,T2,1,0,0.0
+entre ros,,2020,3,T3,1,0,0.0
+entre ros,,2020,4,T4,1,1,1.0
+entre ros,,2022,1,T1,2,0,0.0
+entre ros,,2022,2,T2,2,2,1.0
+entre ros,,2022,3,T3,1,1,1.0
+entre ros,,2022,4,T4,1,0,0.0
+entre ros,,2023,1,T1,3,2,0.6666666666666666
+entre ros,,2023,2,T2,2,1,0.5
+entre ros,,2023,4,T4,2,0,0.0
+entre ros,,2024,1,T1,6,3,0.5
+entre ros,,2024,2,T2,5,4,0.8
+entre ros,,2024,3,T3,3,0,0.0
+entre ros,concordia,2021,4,T4,1,1,1.0
+entre ros,concordia,2023,4,T4,1,1,1.0
+entre ros,gualeguaych,2020,2,T2,1,1,1.0
+entre ros,paran,2020,3,T3,1,1,1.0
+entre ros,paran,2024,1,T1,1,1,1.0
+entre ros,parana,2020,3,T3,1,1,1.0
+entre ros,villaguay,2020,2,T2,1,1,1.0
+formosa,,2022,3,T3,1,0,0.0
+formosa,,2022,4,T4,1,0,0.0
+formosa,,2023,3,T3,1,0,0.0
+formosa,,2024,1,T1,2,0,0.0
+formosa,,2024,2,T2,1,1,1.0
+formosa,,2024,3,T3,3,2,0.6666666666666666
+formosa,,2024,4,T4,1,0,0.0
+formosa,clorinda,2020,1,T1,1,0,0.0
+formosa,clorinda,2020,2,T2,2,1,0.5
+formosa,clorinda,2020,3,T3,1,1,1.0
+formosa,clorinda,2021,1,T1,1,0,0.0
+formosa,formosa,2021,4,T4,1,1,1.0
+formosa,formosa,2022,3,T3,2,2,1.0
+jujuy,,2022,1,T1,2,1,0.5
+jujuy,,2023,1,T1,4,2,0.5
+jujuy,,2023,2,T2,1,0,0.0
+jujuy,,2023,3,T3,2,2,1.0
+jujuy,,2023,4,T4,1,1,1.0
+jujuy,,2024,1,T1,1,0,0.0
+jujuy,,2024,2,T2,1,1,1.0
+jujuy,,2024,3,T3,3,1,0.3333333333333333
+jujuy,jujuy,2020,3,T3,1,1,1.0
+jujuy,jujuy,2020,4,T4,1,1,1.0
+jujuy,pampa blanca,2020,3,T3,1,0,0.0
+jujuy,san salvador de jujuy,2020,1,T1,3,2,0.6666666666666666
+jujuy,san salvador de jujuy,2020,2,T2,2,0,0.0
+jujuy,san salvador de jujuy,2020,3,T3,1,1,1.0
+jujuy,san salvador de jujuy,2021,1,T1,1,0,0.0
+jujuy,san salvador de jujuy,2021,3,T3,1,1,1.0
+jujuy,san salvador de jujuy,2022,2,T2,2,2,1.0
+jujuy,san salvador de jujuy,2024,3,T3,1,1,1.0
+la pampa,,2022,1,T1,1,1,1.0
+la pampa,,2023,2,T2,1,0,0.0
+la pampa,,2024,2,T2,1,0,0.0
+la pampa,santa rosa,2020,1,T1,1,1,1.0
+la pampa,santa rosa,2021,1,T1,1,1,1.0
+la rioja,,2022,3,T3,1,1,1.0
+la rioja,,2023,2,T2,2,1,0.5
+la rioja,,2023,4,T4,2,2,1.0
+la rioja,,2024,1,T1,2,1,0.5
+la rioja,,2024,2,T2,1,0,0.0
+la rioja,,2024,3,T3,1,1,1.0
+la rioja,la rioja,2021,4,T4,1,1,1.0
+mendoza,,2022,1,T1,3,1,0.3333333333333333
+mendoza,,2022,2,T2,4,4,1.0
+mendoza,,2022,3,T3,2,2,1.0
+mendoza,,2022,4,T4,1,1,1.0
+mendoza,,2023,1,T1,7,4,0.5714285714285714
+mendoza,,2023,2,T2,5,2,0.4
+mendoza,,2023,3,T3,4,2,0.5
+mendoza,,2023,4,T4,6,5,0.8333333333333334
+mendoza,,2024,1,T1,10,7,0.7
+mendoza,,2024,2,T2,4,2,0.5
+mendoza,,2024,3,T3,7,2,0.2857142857142857
+mendoza,,2024,4,T4,5,2,0.4
+mendoza,godoy cruz,2021,3,T3,1,1,1.0
+mendoza,godoy cruz,2024,1,T1,1,1,1.0
+mendoza,guaymalln,2021,1,T1,1,1,1.0
+mendoza,guaymalln,2021,2,T2,1,1,1.0
+mendoza,guaymalln,2021,4,T4,1,1,1.0
+mendoza,las heras,2020,2,T2,1,0,0.0
+mendoza,las heras,2021,2,T2,1,1,1.0
+mendoza,lavalle,2020,3,T3,1,0,0.0
+mendoza,maip,2020,1,T1,1,0,0.0
+mendoza,mendoza,2020,1,T1,1,1,1.0
+mendoza,mendoza,2020,3,T3,2,1,0.5
+mendoza,mendoza,2020,4,T4,1,1,1.0
+mendoza,mendoza,2021,1,T1,1,1,1.0
+mendoza,mendoza,2021,2,T2,2,2,1.0
+mendoza,mendoza,2021,4,T4,1,1,1.0
+mendoza,mendoza,2022,2,T2,2,2,1.0
+mendoza,rivadavia,2020,3,T3,1,1,1.0
+mendoza,san jos,2020,1,T1,1,1,1.0
+mendoza,san rafael,2022,1,T1,1,1,1.0
+misiones,,2021,4,T4,1,1,1.0
+misiones,,2022,2,T2,2,1,0.5
+misiones,,2022,3,T3,2,1,0.5
+misiones,,2022,4,T4,1,1,1.0
+misiones,,2023,1,T1,1,0,0.0
+misiones,,2023,2,T2,5,4,0.8
+misiones,,2023,3,T3,3,1,0.3333333333333333
+misiones,,2023,4,T4,1,1,1.0
+misiones,,2024,1,T1,3,2,0.6666666666666666
+misiones,,2024,2,T2,4,2,0.5
+misiones,,2024,3,T3,2,1,0.5
+misiones,,2024,4,T4,1,1,1.0
+misiones,apstoles,2020,2,T2,1,1,1.0
+misiones,campo grande,2020,3,T3,1,0,0.0
+misiones,eldorado,2021,1,T1,1,0,0.0
+misiones,ezeiza,2023,3,T3,1,1,1.0
+misiones,jardn amrica,2021,2,T2,1,0,0.0
+misiones,leandro n. alem,2021,3,T3,1,0,0.0
+misiones,misiones,2020,1,T1,1,0,0.0
+misiones,posadas,2021,3,T3,1,1,1.0
+misiones,posadas,2021,4,T4,1,1,1.0
+misiones,san antonio,2020,3,T3,1,0,0.0
+misiones,santa ana,2022,2,T2,1,1,1.0
+neuqun,,2022,1,T1,2,1,0.5
+neuqun,,2022,2,T2,3,2,0.6666666666666666
+neuqun,,2022,3,T3,2,1,0.5
+neuqun,,2022,4,T4,4,3,0.75
+neuqun,,2023,1,T1,5,4,0.8
+neuqun,,2023,2,T2,3,3,1.0
+neuqun,,2023,3,T3,1,0,0.0
+neuqun,,2024,1,T1,2,1,0.5
+neuqun,,2024,2,T2,2,1,0.5
+neuqun,,2024,3,T3,3,1,0.3333333333333333
+neuqun,,2024,4,T4,4,1,0.25
+neuqun,buta ranquil,2021,1,T1,1,1,1.0
+neuqun,neuquen,2021,1,T1,1,1,1.0
+neuqun,neuqun,2020,2,T2,1,0,0.0
+neuqun,neuqun,2020,3,T3,1,1,1.0
+neuqun,neuqun,2021,2,T2,2,2,1.0
+neuqun,neuqun,2024,2,T2,1,0,0.0
+neuqun,zapala,2023,2,T2,1,0,0.0
+ro negro,,2022,1,T1,1,1,1.0
+ro negro,,2022,4,T4,1,0,0.0
+ro negro,,2023,1,T1,6,1,0.16666666666666666
+ro negro,,2023,2,T2,3,0,0.0
+ro negro,,2023,3,T3,1,0,0.0
+ro negro,,2023,4,T4,3,1,0.3333333333333333
+ro negro,,2024,1,T1,6,1,0.16666666666666666
+ro negro,,2024,2,T2,5,0,0.0
+ro negro,,2024,3,T3,7,3,0.42857142857142855
+ro negro,,2024,4,T4,5,1,0.2
+ro negro,cipolletti,2020,4,T4,1,0,0.0
+ro negro,el bolsn,2020,3,T3,1,0,0.0
+ro negro,el bolsn,2024,1,T1,1,1,1.0
+ro negro,san carlos de bariloche,2022,2,T2,1,1,1.0
+ro negro,san carlos de bariloche,2022,3,T3,2,0,0.0
+ro negro,san carlos de bariloche,2023,1,T1,1,1,1.0
+ro negro,san carlos de bariloche,2024,3,T3,1,0,0.0
+salta,,2022,1,T1,3,2,0.6666666666666666
+salta,,2022,3,T3,1,0,0.0
+salta,,2023,1,T1,4,3,0.75
+salta,,2023,3,T3,6,2,0.3333333333333333
+salta,,2023,4,T4,2,1,0.5
+salta,,2024,1,T1,3,2,0.6666666666666666
+salta,,2024,2,T2,6,2,0.3333333333333333
+salta,,2024,3,T3,6,3,0.5
+salta,,2024,4,T4,5,3,0.6
+salta,capital,2022,1,T1,1,1,1.0
+salta,ciudad autnoma de buenos aires,2023,3,T3,1,0,0.0
+salta,orn,2024,2,T2,1,1,1.0
+salta,rosario de lerma,2020,1,T1,1,1,1.0
+salta,salta,2020,2,T2,2,1,0.5
+salta,salta,2020,3,T3,4,1,0.25
+salta,salta,2022,4,T4,1,1,1.0
+salta,salta,2024,1,T1,1,0,0.0
+salta,tacuil,2021,1,T1,1,1,1.0
+salta,tartagal,2022,4,T4,1,0,0.0
+san juan,,2021,3,T3,1,1,1.0
+san juan,,2022,1,T1,1,1,1.0
+san juan,,2022,3,T3,1,1,1.0
+san juan,,2023,1,T1,2,1,0.5
+san juan,,2023,2,T2,1,0,0.0
+san juan,,2023,3,T3,2,1,0.5
+san juan,,2023,4,T4,1,1,1.0
+san juan,,2024,2,T2,1,0,0.0
+san juan,,2024,3,T3,1,1,1.0
+san juan,,2024,4,T4,2,1,0.5
+san juan,media agua,2022,3,T3,1,1,1.0
+san juan,rivadavia,2020,4,T4,1,1,1.0
+san luis,,2022,1,T1,2,2,1.0
+san luis,,2023,1,T1,1,1,1.0
+san luis,,2023,3,T3,2,1,0.5
+san luis,,2023,4,T4,1,1,1.0
+san luis,,2024,2,T2,2,1,0.5
+san luis,merlo,2020,1,T1,1,1,1.0
+san luis,san luis,2020,4,T4,1,1,1.0
+san luis,san luis,2021,1,T1,1,0,0.0
+san luis,san luis,2021,2,T2,1,1,1.0
+san luis,san luis,2022,3,T3,1,1,1.0
+san luis,villa de merlo,2022,4,T4,1,1,1.0
+santa cruz,,2022,3,T3,1,1,1.0
+santa cruz,,2023,1,T1,2,2,1.0
+santa cruz,,2024,1,T1,1,0,0.0
+santa cruz,,2024,2,T2,1,0,0.0
+santa cruz,,2024,3,T3,1,0,0.0
+santa cruz,,2024,4,T4,1,0,0.0
+santa cruz,pico truncado,2021,3,T3,1,0,0.0
+santa fe,,2022,1,T1,5,3,0.6
+santa fe,,2022,2,T2,5,2,0.4
+santa fe,,2022,3,T3,7,4,0.5714285714285714
+santa fe,,2022,4,T4,3,2,0.6666666666666666
+santa fe,,2023,1,T1,5,3,0.6
+santa fe,,2023,2,T2,4,2,0.5
+santa fe,,2023,3,T3,8,6,0.75
+santa fe,,2023,4,T4,3,1,0.3333333333333333
+santa fe,,2024,1,T1,4,4,1.0
+santa fe,,2024,2,T2,6,4,0.6666666666666666
+santa fe,,2024,3,T3,7,3,0.42857142857142855
+santa fe,,2024,4,T4,7,6,0.8571428571428571
+santa fe,funes,2020,2,T2,1,1,1.0
+santa fe,glvez,2020,2,T2,1,1,1.0
+santa fe,glvez,2020,4,T4,1,0,0.0
+santa fe,glvez,2022,4,T4,1,0,0.0
+santa fe,las colonias,2020,3,T3,1,1,1.0
+santa fe,rosario,2020,1,T1,3,2,0.6666666666666666
+santa fe,rosario,2020,2,T2,5,1,0.2
+santa fe,rosario,2020,3,T3,3,1,0.3333333333333333
+santa fe,rosario,2020,4,T4,2,1,0.5
+santa fe,rosario,2021,1,T1,2,2,1.0
+santa fe,rosario,2021,3,T3,4,2,0.5
+santa fe,rosario,2021,4,T4,3,1,0.3333333333333333
+santa fe,rosario,2022,1,T1,2,1,0.5
+santa fe,rosario,2022,2,T2,1,0,0.0
+santa fe,rosario,2022,3,T3,1,0,0.0
+santa fe,rosario,2024,2,T2,1,1,1.0
+santa fe,rosario,2024,3,T3,2,1,0.5
+santa fe,rosario,2024,4,T4,1,1,1.0
+santa fe,san nicols de los arroyos,2024,3,T3,1,0,0.0
+santa fe,santa fe,2020,3,T3,1,0,0.0
+santa fe,santa fe,2020,4,T4,1,1,1.0
+santa fe,santa fe,2021,1,T1,1,1,1.0
+santa fe,santa fe,2021,3,T3,2,2,1.0
+santa fe,santa fe,2021,4,T4,2,2,1.0
+santa fe,santa fe,2022,1,T1,1,1,1.0
+santa fe,santa fe de la vera cruz,2023,1,T1,1,1,1.0
+santa fe,santo tom,2022,1,T1,1,1,1.0
+santa fe,villa gobernador galvez,2022,3,T3,1,1,1.0
+santiago del estero,,2020,4,T4,1,1,1.0
+santiago del estero,,2022,1,T1,2,2,1.0
+santiago del estero,,2022,3,T3,1,1,1.0
+santiago del estero,,2023,1,T1,2,2,1.0
+santiago del estero,,2023,3,T3,1,0,0.0
+santiago del estero,,2024,2,T2,3,2,0.6666666666666666
+santiago del estero,,2024,3,T3,2,2,1.0
+santiago del estero,aguirre,2020,2,T2,1,1,1.0
+santiago del estero,ciudad autnoma de buenos aires,2022,4,T4,1,0,0.0
+santiago del estero,donadeu,2022,3,T3,1,0,0.0
+santiago del estero,la banda,2022,1,T1,2,0,0.0
+santiago del estero,la banda,2022,2,T2,1,1,1.0
+santiago del estero,la banda,2022,3,T3,1,1,1.0
+santiago del estero,la banda,2022,4,T4,1,0,0.0
+santiago del estero,santiago del estero,2020,1,T1,1,0,0.0
+santiago del estero,santiago del estero,2021,1,T1,2,2,1.0
+santiago del estero,santiago del estero,2021,2,T2,1,1,1.0
+santiago del estero,santiago del estero,2022,2,T2,1,0,0.0
+santiago del estero,termas de ro hondo,2024,4,T4,1,0,0.0
+santiago del estero,villa atamisqui,2022,4,T4,1,1,1.0
+tierra del fuego,,2023,2,T2,1,1,1.0
+tierra del fuego,,2023,3,T3,2,2,1.0
+tierra del fuego,,2024,1,T1,1,1,1.0
+tierra del fuego,,2024,3,T3,1,0,0.0
+tierra del fuego,paran,2023,3,T3,1,0,0.0
+tierra del fuego,rio grande,2020,1,T1,1,1,1.0
+tierra del fuego,ro grande,2020,4,T4,1,0,0.0
+tierra del fuego,ushuaia,2020,3,T3,2,2,1.0
+tierra del fuego,ushuaia,2021,2,T2,1,1,1.0
+tierra del fuego,ushuaia,2021,3,T3,1,1,1.0
+tierra del fuego,ushuaia,2021,4,T4,1,1,1.0
+tucumn,,2022,1,T1,3,1,0.3333333333333333
+tucumn,,2022,2,T2,2,0,0.0
+tucumn,,2022,3,T3,2,1,0.5
+tucumn,,2022,4,T4,5,3,0.6
+tucumn,,2023,1,T1,7,3,0.42857142857142855
+tucumn,,2023,2,T2,3,1,0.3333333333333333
+tucumn,,2023,3,T3,9,4,0.4444444444444444
+tucumn,,2023,4,T4,11,6,0.5454545454545454
+tucumn,,2024,1,T1,7,6,0.8571428571428571
+tucumn,,2024,2,T2,10,3,0.3
+tucumn,,2024,3,T3,8,2,0.25
+tucumn,,2024,4,T4,6,1,0.16666666666666666
+tucumn,alderetes,2022,4,T4,1,1,1.0
+tucumn,juan bautista alberdi,2023,1,T1,1,0,0.0
+tucumn,san miguel de tucumn,2020,1,T1,1,1,1.0
+tucumn,san miguel de tucumn,2020,2,T2,1,1,1.0
+tucumn,san miguel de tucumn,2020,4,T4,1,1,1.0
+tucumn,san miguel de tucumn,2021,1,T1,2,2,1.0
+tucumn,san miguel de tucumn,2022,2,T2,1,1,1.0
+tucumn,san miguel de tucumn,2023,4,T4,1,1,1.0
+tucumn,san miguel de tucumn,2024,1,T1,1,1,1.0
+tucumn,tucumn,2020,3,T3,1,0,0.0
