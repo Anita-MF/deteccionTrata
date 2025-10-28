@@ -19,12 +19,38 @@
 ---
 
 ## 2) Datos
-- **Fuente:** `oficina-rescate-orientaciones-202001-202308.csv` (2020–2024).
-- **Registros (forma final):** **7.848** filas · **26** variables.  
-- **Balance:** `es_trata=1` **54%** (4.241) / `0` **46%** (3.607).  
-- **Target:** `es_trata` (1/0).
-- **Principales transformaciones:** normalización de strings (lowercase/sin tildes), estandarización de provincia/localidad/nacionalidad, derivación temporal (año/mes/trimestre + sin/cos), banderas (`es_fin_semana`, `es_anonima`), uso de IDs geográficos cuando están disponibles.
-- **Calidad de datos:** tablas de nulos antes/después en `results/nulos_antes.csv` y `results/nulos_despues.csv`.
+### Fuente y alcance del dataset
+- **Origen**: Oficina de Rescate y Acompañamiento (AR), Argentina.
+- **Cobertura temporal**: ene-2020 a dic-2024 (corte incluido).
+- **Fecha de adquisición**: dd/mm/aaaa.
+- **Uso y estado**: Con fines educativos; datos normalizados y **anonimizados** (sin PII).
+- **Accesos**:
+  - CSV procesado (canónico) — *si el repo no lo puede alojar por tamaño/privacidad*: [Descargar desde Drive](ENLACE_DE_DRIVE_AL_CSV)
+  - Estructura de carpetas del proyecto en este repositorio (`data/raw`, `data/processed`, `results`, `figs`).
+
+### Descripción del dataset (resumen)
+- **Instancias**: 7.848
+- **Características**: 26 columnas (ver diccionario)
+- **Target**: `es_trata` (1/0) — balance: 1=54% (4241), 0=46% (3607)
+- **Tipos y nulos**: ver `results/nulos_antes.csv` y `results/nulos_despues.csv`  
+  (incluyen conteos, % nulos y dtype por columna).
+- **Transformaciones principales**:
+  - Normalización de strings y categorías (provincias/localidades/nacionalidad).
+  - Derivación temporal (`anio`, `mes`, `trimestre`, `dia_semana`, `es_fin_semana`, `mes_sin`, `mes_cos`).
+  - Construcción robusta de `es_trata` (reglas auditadas).
+  - Eliminación de `hora_ingreso` por estar vacía.
+
+### Diccionario de datos (extracto)
+| columna                      | tipo     | descripción breve                              | % nulos | # únicos |
+|-----------------------------|----------|-----------------------------------------------|---------|---------|
+| `es_trata`                  | int (0/1)| Etiqueta binaria (objetivo)                   | 0%      | 2       |
+| `consultante_provincia`     | string   | Provincia normalizada (INDEC)                 | ~40%    | ~25     |
+| `consultante_localidad`     | string   | Localidad normalizada                         | ~81%    | ~351    |
+| `consultante_nacionalidad`  | string   | Nacionalidad normalizada                      | ~76%    | ~18     |
+| `consultante_edad_aparente` | float    | Edad aparente                                 | ~15%    | ~88     |
+| `anio` `mes` `trimestre`    | int      | Derivadas temporales                          | —       | —       |
+| `mes_sin` `mes_cos`         | float    | Componentes cíclicos del mes                  | —       | —       |
+> El detalle completo está en `results/nulos_*.csv`.
 
 ---
 
