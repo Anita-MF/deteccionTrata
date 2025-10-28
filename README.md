@@ -1,4 +1,4 @@
-# Predicción de situaciones de trata de personas (2020–2024) — README
+# Predicción de situaciones de trata de personas (2020–2024)
 
 > **Proyecto de Aprendizaje Automático** · Tecnicatura en Ciencia de Datos e IA  
 > **Autora:** Ana María Fernández · **Ámbito:** Oficina de Rescate y Acompañamiento (AR)  
