@@ -1,58 +1,78 @@
-# Predicción de situaciones de trata de personas (2020–2023) — README
+# Predicción de situaciones de trata de personas (2020–2024) — README
 
 > **Proyecto de Aprendizaje Automático** · Tecnicatura en Ciencia de Datos e IA  
 > **Autora:** Ana María Fernández · **Ámbito:** Oficina de Rescate y Acompañamiento (AR)  
 > **Enfoque territorial:** Tierra del Fuego (transferencia del modelo)
-> 
-## 1) Objetivo
-> 📄 **Informe completo (PDF)**: [Ver en Google Drive](https://drive.google.com/file/d/1AvKjNq2TPsjG6Hjy8Ap9MwXs9K5kZrEF/view?usp=sharing) · [Descargar](https://drive.google.com/uc?export=download&id=1AvKjNq2TPsjG6Hjy8Ap9MwXs9K5kZrEF)
 
-**Clasificar** si una intervención de la Oficina de Rescate (ene-2020 a ago-2023) corresponde a **trata (1)** o **no trata (0)**.
+## 1) Objetivo
+**Clasificar** si una intervención de la Oficina de Rescate (ene-2020 a oct-2024) corresponde a **trata (1)** o **no trata (0)**.
 
 - **Objetivo general:** construir un clasificador binario robusto y transferible a contextos de baja frecuencia (Tierra del Fuego).
 - **Objetivos específicos:**
-  1. EDA y preparación (valores faltantes, desbalance, patrones regionales).
+  1. EDA y preparación (valores faltantes, balance, patrones regionales).
   2. Entrenar y comparar modelos supervisados priorizando **recall**.
-  3. **Transfer learning local:** evaluar el mejor modelo nacional sobre los **27** casos de TDF.
+  3. **Transferencia local (TDF):** evaluar el mejor modelo nacional sobre el subconjunto local (n pequeño) y ajustar umbral si es necesario.
 
-> 📁 **Carpeta del proyecto (Drive)**:  
-> [Abrir en Google Drive](https://drive.google.com/drive/folders/1Pi_5rFwRCzmmJpSQl1gV6k_Ke6B7OvzF?usp=drive_link)
+📄 **Informe completo (PDF):** [Ver](https://drive.google.com/file/d/1KOsoBH0DmTL9VTpilG6K0Wa1Wn1yGD0I/view?usp=drive_link) · [Descargar el informe (PDF)](https://drive.google.com/uc?export=download&id=1KOsoBH0DmTL9VTpilG6K0Wa1Wn1yGD0I)
+📁 **Carpeta del proyecto (Drive):** [Abrir](https://drive.google.com/drive/folders/1Pi_5rFwRCzmmJpSQl1gV6k_Ke6B7OvzF?usp=drive_link)
+
+---
 
 ## 2) Datos
-- **Fuente:** `oficina-rescate-orientaciones-202001-202308.csv`
-- **Registros:** **7.853** (Argentina).  
-  Confirmadas como trata: **4.241** (~54%).  
-  **Tierra del Fuego:** 27 intervenciones, 20 casos de trata.
-- **Target:** `es_trata` (1/0)
-- **Features relevantes (ejemplos):** `es_anonima`, `origen`, `subtema`, `provincia`, `via_ingreso`, `consultante_genero`, `consultante_edad_aparente`.
+- **Fuente:** `oficina-rescate-orientaciones-202001-202308.csv` (2020–2024).
+- **Registros (forma final):** **7.848** filas · **26** variables.  
+- **Balance:** `es_trata=1` **54%** (4.241) / `0` **46%** (3.607).  
+- **Target:** `es_trata` (1/0).
+- **Principales transformaciones:** normalización de strings (lowercase/sin tildes), estandarización de provincia/localidad/nacionalidad, derivación temporal (año/mes/trimestre + sin/cos), banderas (`es_fin_semana`, `es_anonima`), uso de IDs geográficos cuando están disponibles.
+- **Calidad de datos:** tablas de nulos antes/después en `results/nulos_antes.csv` y `results/nulos_despues.csv`.
+
+---
 
 ## 3) Metodología
-- **Preprocesamiento:** imputación (KNNImputer), one-hot para categóricas, standard scaling para numéricas, split 80/20 estratificado.
-- **Modelos evaluados:** Regresión Logística (baseline interpretable), Árbol de Decisión, Random Forest y **HistGradientBoostingClassifier** (como baseline alternativo).
-- **Validación:** CV estratificada (k=5). **Optimización** por Grid/Random Search enfocada en **recall**.
-- **Selección y umbral:** curva PR y ajuste de umbral para maximizar recall con costo controlado de FP.
+- **Validación:** split **temporal** (train/valid/test por fechas) sin fuga; **backtesting rolling-origin** mensual (2020-07→2024-12).
+- **Optimización de umbral:** por **curva Precision–Recall** con restricción **recall ≥ 0.80**.
+- **Calibración de probabilidades:** Isotónica/Platt; evaluación por **Brier** y curva de calibración.
+- **Modelos evaluados:** Logistic Regression (base), **Logistic Regression + interacciones** (temporada×anonimato, provincia×anonimato, nacionalidad×temporada) y **HistGradientBoosting** (con/sin calibración).
+- **Reproducibilidad:** pipelines y umbrales persistidos; semillas fijas.
+
+---
 
 ## 4) Resultados (resumen)
-- **Mejor pipeline:** `Tuned-LogisticRegression` con **umbral = 0.328** (optimizado por PR para recall temprano).
-- **Baseline alternativo:** `HistGradientBoostingClassifier` con **F1 = 0.304** (referencia).
-- **Archivos de respaldo de nulos:**  
-  - `results/nulos_antes.csv`  
-  - `results/nulos_despues.csv`
-- **Métricas detalladas:** ver `results/metrics_*.csv` y gráficos en `figs/` (PR, ROC, matrices 0.5 vs óptimo, calibration).
+- **Modelo seleccionado (operativo):** **Logistic Regression + interacciones** con **umbral = 0.345** (PR con recall ≥ 0.80).  
+  **Test:** **Precision 0.563 · Recall 0.972 · F1 0.713 · ROC-AUC 0.623**.
+- **Alternativa si se prioriza F1/ROC:** **HistGradientBoosting calibrado** con **umbral = 0.396**.  
+  **Test:** **Precision 0.562 · Recall 0.958 · F1 0.708 · ROC-AUC 0.659 · AP 0.685**  
+  (Brier **0.243 → 0.234** tras calibración).
+- **Modelo base (referencia):** **Tuned-LogisticRegression @ thr = 0.328**.  
+  **Test:** **Precision 0.559 · Recall 0.951 · F1 0.704 · AP 0.667 · ROC-AUC 0.628**.
+- **Backtesting temporal (promedios):** **Precision 0.647 · Recall 0.686 · F1 0.651**.
 
-> ⚠️ *Nota*: Las métricas finales exactas (precision, recall, F1, ROC-AUC) y las tablas por umbral deben tomarse **tal cual** del notebook del proyecto y ya están exportadas en `results/`. Este README **respeta** nombres, umbrales y valores clave indicados por la autora.
+**Archivos clave exportados**
+- Métricas/tablas:  
+  `results/modelos_metricas.csv`, `results/hp_search_resumen.csv`, `results/hp_best_holdout_metrics.csv`,  
+  `results/best_metrics_Tuned-LogisticRegression_c16.csv`,  
+  `results/best_threshold_Tuned-LogisticRegression_c16.json`,  
+  `results/classification_report_Tuned-LogisticRegression_opt_c16.txt`
+- Figuras (ejemplos):  
+  `figs/pr_Tuned-LogisticRegression_c16.png`, `figs/pr_HGB.png`, `figs/roc_HGB.png`,  
+  `figs/cm_Tuned-LogisticRegression_050_c16.png`, `figs/cm_Tuned-LogisticRegression_opt_c16.png`
 
+---
 
 ## 5) Transferencia a Tierra del Fuego
-- Se aplica el mejor clasificador nacional (`Tuned-LogisticRegression @ thr=0.328`) al subconjunto TDF (27 casos).
-- Se reporta desempeño local (confusión, recall, PPV) y se revisan errores FN/FP para **ajustes de umbral** y **criterios operativos**.
+- Evaluación del mejor clasificador nacional sobre **TDF** (muestra chica).  
+- Con **LogReg + interacciones** y **mismo umbral (0.345)** en corrida específica (**n=30**, **positivos=22**):  
+  **Precision 0.733 · Recall 1.00 · F1 0.846**.  
+  *Cautela por bajo N; monitoreo mensual y recalibración si cambia la casuística.*
 
-## 6) Estructura del repositorio (Cookiecutter Data Science)
+---
+
+## 6) Estructura del repositorio
 ```
 ├─ data/
-│  ├─ raw/     # CSV original
-│  ├─ interim/ # limpiezas parciales
-│  └─ processed/ # dataset canónico
+│  ├─ raw/         # CSV original
+│  ├─ interim/     # limpiezas parciales
+│  └─ processed/   # dataset canónico
 ├─ notebooks/
 │  ├─ 01_eda_preprocesamiento.ipynb
 │  ├─ 02_modelado_cv_tuning.ipynb
@@ -61,13 +81,18 @@
 ├─ results/
 │  ├─ nulos_antes.csv
 │  ├─ nulos_despues.csv
-│  ├─ metrics_cv.csv
-│  └─ metrics_test_thr0328.csv
+│  ├─ modelos_metricas.csv
+│  ├─ hp_search_resumen.csv
+│  ├─ hp_best_holdout_metrics.csv
+│  ├─ best_metrics_Tuned-LogisticRegression_c16.csv
+│  ├─ best_threshold_Tuned-LogisticRegression_c16.json
+│  └─ classification_report_Tuned-LogisticRegression_opt_c16.txt
 ├─ figs/
-│  ├─ pr_curve_thr0328.png
-│  ├─ roc_curve.png
-│  ├─ confusion_050.png
-│  └─ confusion_thr0328.png
+│  ├─ pr_Tuned-LogisticRegression_c16.png
+│  ├─ pr_HGB.png
+│  ├─ roc_HGB.png
+│  ├─ cm_Tuned-LogisticRegression_050_c16.png
+│  └─ cm_Tuned-LogisticRegression_opt_c16.png
 └─ README.md
 ```
 
