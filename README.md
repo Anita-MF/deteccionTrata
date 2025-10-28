@@ -25,7 +25,7 @@
 - **Fecha de adquisición**: dd/mm/aaaa.
 - **Uso y estado**: Con fines educativos; datos normalizados y **anonimizados** (sin PII).
 - **Accesos**:
-  - CSV procesado (canónico) — *si el repo no lo puede alojar por tamaño/privacidad*: [Descargar desde Drive](https://github.com/Anita-MF/deteccionTrata/blob/main/data_rawdatarawoficina-rescate-orientaciones-202001-202308.csv.csv)
+  - CSV procesado (canónico) — *si el repo no lo puede alojar por tamaño/privacidad*: [Descargar desde Drive](https://drive.google.com/file/d/1_ttFnO6qTHTiBnFyFbd5pzR4SB0cjPgc/view?usp=sharing)
   - Estructura de carpetas del proyecto en este repositorio (`data/raw`, `data/processed`, `results`, `figs`).
 
 ### Descripción del dataset (resumen)
