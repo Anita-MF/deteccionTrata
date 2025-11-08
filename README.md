@@ -16,35 +16,19 @@
 📄 **Informe completo (PDF):** [Ver](https://drive.google.com/file/d/1AvKjNq2TPsjG6Hjy8Ap9MwXs9K5kZrEF/view?usp=sharing) · [Descargar](https://drive.google.com/uc?export=download&id=1AvKjNq2TPsjG6Hjy8Ap9MwXs9K5kZrEF)  
 📁 **Carpeta del proyecto (Drive):** [Abrir](https://drive.google.com/drive/folders/1Pi_5rFwRCzmmJpSQl1gV6k_Ke6B7OvzF?usp=drive_link)
 
----
 ## Cómo reproducir
 
 ```bash
 python -m pip install -r requirements.txt
 jupyter nbconvert --to notebook --execute notebooks/03_modelado_resultados.ipynb --output notebooks/03_modelado_resultados_run.ipynb
-Figuras: figs/
----
-## Resultados (CSV/JSON/TXT): results/
+```
 
-Modelo final: models/mejor_pipeline_calibrado.pkl (si tu notebook lo guarda)
+- Figuras: `figs/`  
+- Resultados (CSV/JSON/TXT): `results/`  
+- Modelo final: `models/mejor_pipeline_calibrado.pkl` (si la notebook lo guarda)  
+- Umbral: `results/threshold_opt.json`  
+- Informe: `reports/INFORME_Proyecto_Trata.pdf`
 
-Umbral: results/threshold_opt.json
-
-Informe: reports/INFORME_Proyecto_Trata.pdf
-
-Inferencia rápida (demo)
-
-Prepará results/inferencia_input.csv con las mismas columnas que results/inferencia_template_columns.csv.
-
-python predict.py \
-  --model models/mejor_pipeline_calibrado.pkl \
-  --threshold-file results/threshold_opt.json \
-  --input-csv results/inferencia_input.csv \
-  --output-csv results/predicciones.csv
-
-Video — Entrega 3
-
-Duración: 5–7 minutos. Link: [agregar URL aquí].
 ---
 
 ## 2) Datos
