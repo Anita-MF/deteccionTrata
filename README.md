@@ -59,14 +59,14 @@
 ### Resultados (vista rápida con imágenes)
 
 **Curva Precision–Recall + umbral operativo**  
-![Curva PR](figs/pr_Tuned-LogisticRegression_cl6.png)
+![Curva PR](figs/pr_Tuned-LogisticRegression_c16.png)
 
 **Matrices de confusión**  
 - **Umbral 0.50** (baseline)  
-  ![Matriz confusión 0.50](figs/cm_Tuned-LogisticRegression_050_cl6.png)
+  ![Matriz confusión 0.50](figs/cm_Tuned-LogisticRegression_050_c16.png)
 
 - **Umbral óptimo** (seleccionado por PR con foco en Recall)  
-  ![Matriz confusión óptima](figs/cm_Tuned-LogisticRegression_opt_cl6.png)
+  ![Matriz confusión óptima](figs/cm_Tuned-LogisticRegression_opt_c16.png)
 
 **Calibración (reliability)**  
 ![Curva de confiabilidad](figs/calibracion_reliability.png)
