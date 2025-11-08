@@ -1,9 +1,6 @@
-﻿# Texto
-* text=auto
-
-# Binarios (no tocar finales de línea)
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.gif binary
 *.pdf binary
+*.ipynb -text
