@@ -1,4 +1,4 @@
-﻿feature,importance_mean,importance_std
+feature,importance_mean,importance_std
 cat__origen_institucion - 145,0.04961862966439973,0.002609596453614213
 num__trimestre,0.02935940953499865,0.002737337373544422
 num__mes_cos,0.028614273324248908,0.003373538174047247

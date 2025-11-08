@@ -1,4 +1,4 @@
-﻿variable,chi2,p_value,dof,niveles
+variable,chi2,p_value,dof,niveles
 consultante_nacionalidad,148.78653754313527,4.228331216242915e-23,17,18
 consultante_provincia,126.0066596097206,8.156239546021546e-16,24,25
 es_anonima,46.5070233951716,9.129065509546322e-12,1,2
