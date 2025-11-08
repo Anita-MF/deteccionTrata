@@ -71,6 +71,7 @@
 **CalibraciÃ³n (reliability)**  
 ![Curva de confiabilidad](figs/calibracion_reliability.png)
 
+
 > El detalle completo de mÃ©tricas (Recall, F1, ROC-AUC, PR-AUC), backtesting temporal y Transferencia a TDF estÃ¡ en la **notebook** y en `results/`.
 
 ---
@@ -146,3 +147,4 @@ Este proyecto no naciÃ³ â€œordenadoâ€: errores de rutas y carpetas ll
 En modelado, todo quedÃ³ dentro de **Pipeline**, se priorizÃ³ **recall** y se ajustÃ³ el **umbral** por **PR** (aceptando mÃ¡s FP para detecciÃ³n temprana).  
 En GitHub aparecieron *mixed line endings*, PDFs tratados como texto y figuras que se ven sÃ³lo en **github.dev**; mientras se estabiliza, los **PDF/figuras** se respaldan en `reports/`.  
 Cada tropiezo dejÃ³ una mejora: carpetas prolijas, `.gitattributes`, umbral justificado y resultados reproducibles.
+
