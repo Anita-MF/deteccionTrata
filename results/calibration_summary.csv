@@ -1,2 +1,2 @@
-modelo,set,brier_ref,brier_cal,roc_auc_ref,roc_auc_cal,ap_ref,ap_cal,thr_opt,opt_precision,opt_recall,opt_f1,050_precision,050_recall,050_f1
+﻿modelo,set,brier_ref,brier_cal,roc_auc_ref,roc_auc_cal,ap_ref,ap_cal,thr_opt,opt_precision,opt_recall,opt_f1,050_precision,050_recall,050_f1
 Tuned-HistGradientBoostingClassifier,TEST,0.24301563993040448,0.23385975674870976,0.6591698432817771,0.6568739223123421,0.6838195829436405,0.6847405999692453,0.3958747135217723,0.5619117918435136,0.9578483799937088,0.7083042568039079,0.5910064239828694,0.8681975463982384,0.703274302458912
