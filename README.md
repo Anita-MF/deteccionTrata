@@ -23,8 +23,8 @@
 python -m pip install -r requirements.txt
 jupyter nbconvert --to notebook --execute notebooks/03_modelado_resultados.ipynb --output notebooks/03_modelado_resultados_run.ipynb
 Figuras: figs/
-
-Resultados (CSV/JSON/TXT): results/
+---
+## Resultados (CSV/JSON/TXT): results/
 
 Modelo final: models/mejor_pipeline_calibrado.pkl (si tu notebook lo guarda)
 
