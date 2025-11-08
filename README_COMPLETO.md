@@ -69,7 +69,7 @@
   ![Matriz confusión óptima](figs/cm_Tuned-LogisticRegression_opt_cl6.png)
 
 **Curva de confiabilidad (calibración de probabilidades)**
-![Curva de confiabilidad](figs/calibracion_reliability.png)
+![Curva de confiabilidad]([figs/calibracion_reliability.png](https://github.com/Anita-MF/deteccionTrata/blob/main/figs/calibrationTunedHistGradientBoostingClassifier.png))
 
 > El detalle completo de métricas (Recall, F1, ROC-AUC, PR-AUC), backtesting temporal y Transferencia a TDF está en la **notebook** y en `results/`.
 
