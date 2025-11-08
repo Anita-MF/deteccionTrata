@@ -13,8 +13,7 @@
   2. Entrenar y comparar modelos supervisados priorizando **recall**.
   3. **Transferencia local (TDF):** evaluar el mejor modelo nacional sobre el subconjunto local (n pequeño) y ajustar umbral si es necesario.
 
-📄 **Informe completo (PDF):** [Ver](https://drive.google.com/file/d/1AvKjNq2TPsjG6Hjy8Ap9MwXs9K5kZrEF/view?usp=sharing) · [Descargar](https://drive.google.com/uc?export=download&id=1AvKjNq2TPsjG6Hjy8Ap9MwXs9K5kZrEF)  
-📁 **Carpeta del proyecto (Drive):** [Abrir](https://drive.google.com/drive/folders/1Pi_5rFwRCzmmJpSQl1gV6k_Ke6B7OvzF?usp=drive_link)
+📄 **Informe completo (PDF):** [`reports/INFORME_Proyecto_Trata.pdf`](reports/INFORME_Proyecto_Trata.pdf)
 
 ---
 
@@ -54,8 +53,25 @@
   `results/best_threshold_Tuned-LogisticRegression_c16.json`,  
   `results/classification_report_Tuned-LogisticRegression_opt_c16.txt`
 - Figuras (ejemplos):  
-  `figs/pr_Tuned-LogisticRegression_c16.png`, `figs/pr_HGB.png`, `figs/roc_HGB.png`,  
-  `figs/cm_Tuned-LogisticRegression_050_c16.png`, `figs/cm_Tuned-LogisticRegression_opt_c16.png`
+  `figs/pr_Tuned-LogisticRegression_cl6.png`, `figs/pr_HGB.png`, `figs/roc_HGB.png`,  
+  `figs/cm_Tuned-LogisticRegression_050_cl6.png`, `figs/cm_Tuned-LogisticRegression_opt_cl6.png`
+
+### Resultados (vista rápida con imágenes)
+
+**Curva Precision–Recall + umbral operativo**  
+![Curva PR](figs/pr_Tuned-LogisticRegression_cl6.png)
+
+**Matrices de confusión**  
+- **Umbral 0.50** (baseline)  
+  ![Matriz confusión 0.50](figs/cm_Tuned-LogisticRegression_050_cl6.png)
+
+- **Umbral óptimo** (seleccionado por PR con foco en Recall)  
+  ![Matriz confusión óptima](figs/cm_Tuned-LogisticRegression_opt_cl6.png)
+
+**Calibración (reliability)**  
+![Curva de confiabilidad](figs/calibracion_reliability.png)
+
+> El detalle completo de métricas (Recall, F1, ROC-AUC, PR-AUC), backtesting temporal y Transferencia a TDF está en la **notebook** y en `results/`.
 
 ---
 
@@ -67,55 +83,66 @@
 
 ---
 
-## 6) Estructura del repositorio
+## 6) Cómo reproducir
+
+```bash
+python -m pip install -r requirements.txt
+jupyter nbconvert --to notebook --execute notebooks/03_modelado_resultados.ipynb --output notebooks/03_modelado_resultados_run.ipynb
+```
+
+- Figuras: `figs/`  
+- Resultados (CSV/JSON/TXT): `results/`  
+- Modelo final: `models/mejor_pipeline_calibrado.pkl` (si la notebook lo guarda)  
+- Umbral: `results/threshold_opt.json`  
+- Informe: `reports/INFORME_Proyecto_Trata.pdf`
+
+### Inferencia rápida (demo, opcional)
+Si agregás `predict.py` (script de inferencia), corré:
+```bash
+python predict.py   --model models/mejor_pipeline_calibrado.pkl   --threshold-file results/threshold_opt.json   --input-csv results/inferencia_input.csv   --output-csv results/predicciones.csv
+```
+`predicciones.csv` incluye `proba_es_trata` y `es_trata_pred`.
+
+---
+
+## 7) Estructura del repositorio
 ```
 ├─ data/
-│  ├─ raw/         # CSV original
-│  ├─ interim/     # limpiezas parciales
-│  └─ processed/   # dataset canónico
+│  ├─ raw/       # CSV originales
+│  └─ curated/   # dataset canónico/curado
 ├─ notebooks/
-│  ├─ 01_eda_preprocesamiento.ipynb
-│  ├─ 02_modelado_cv_tuning.ipynb
-│  ├─ 03_umbral_pr_y_diagnosticos.ipynb
-│  └─ 04_transfer_tdf.ipynb
-├─ results/
-│  ├─ nulos_antes.csv
-│  ├─ nulos_despues.csv
-│  ├─ modelos_metricas.csv
-│  ├─ hp_search_resumen.csv
-│  ├─ hp_best_holdout_metrics.csv
-│  ├─ best_metrics_Tuned-LogisticRegression_c16.csv
-│  ├─ best_threshold_Tuned-LogisticRegression_c16.json
-│  └─ classification_report_Tuned-LogisticRegression_opt_c16.txt
-├─ figs/
-│  ├─ pr_Tuned-LogisticRegression_c16.png
-│  ├─ pr_HGB.png
-│  ├─ roc_HGB.png
-│  ├─ cm_Tuned-LogisticRegression_050_c16.png
-│  └─ cm_Tuned-LogisticRegression_opt_c16.png
+│  └─ 03_modelado_resultados.ipynb
+├─ results/      # métricas/tablas/umbrales
+├─ figs/         # figuras exportadas
+├─ reports/
+│  └─ INFORME_Proyecto_Trata.pdf
+├─ utils/
+├─ requirements.txt
 └─ README.md
 ```
 
 ---
 
-## 7) Consideraciones éticas y privacidad
+## 8) Consideraciones éticas y privacidad
 - Anonimización estricta; no publicar PII. Uso educativo con orientación a mejora operativa.
 
-## 8) Entorno
-- Python 3.10 · pandas 1.5 · numpy 1.23 · scikit-learn 1.2 · imbalanced-learn · shap · matplotlib · seaborn.
+## 9) Entorno
+- Python 3.10  
+- `requirements.txt`: pandas ≥ 2.2 · numpy ≥ 1.26 · scikit-learn ≥ 1.4 · matplotlib ≥ 3.8 · scipy ≥ 1.12 · joblib ≥ 1.4
 
-## 9) Citas y marco de clase
+## 10) Citas y marco de clase
 - Clase 4: Regresión lineal/logística · Clase 5: KNN/Árboles · Clase 6: SVM/SGD · Clase 8: Clustering.  
   Material y prácticas de la Tecnicatura.
 
 ---
 
-## 10) Bitácora del proceso del proyecto
-Este proyecto no nació “ordenado”: errores de rutas y carpetas llevaron a crear `figs/` y `results/`, usar rutas relativas y versionar salidas.  
-En modelado, todo quedó dentro de **Pipeline**, se priorizó **recall** y se ajustó el **umbral** por **PR** (aceptando más FP para detección temprana).  
-En GitHub aparecieron *mixed line endings*, PDFs tratados como texto y figuras que se ven sólo en **github.dev**; mientras se estabiliza, los **PDF/figuras** se respaldan en **Drive** (enlaces arriba).  
-Cada tropiezo dejó una mejora: carpetas prolijas, `.gitattributes`, umbral justificado y resultados reproducibles.
+## 11) Video — Entrega 3
+Duración: **5–7 minutos**. Link: **(agregar URL)**.
 
 ---
 
-© 2025 Ana María Fernández — Tecnicatura en Ciencia de Datos e IA
+## 12) Bitácora del proceso del proyecto
+Este proyecto no nació “ordenado”: errores de rutas y carpetas llevaron a crear `figs/` y `results/`, usar rutas relativas y versionar salidas.  
+En modelado, todo quedó dentro de **Pipeline**, se priorizó **recall** y se ajustó el **umbral** por **PR** (aceptando más FP para detección temprana).  
+En GitHub aparecieron *mixed line endings*, PDFs tratados como texto y figuras que se ven sólo en **github.dev**; mientras se estabiliza, los **PDF/figuras** se respaldan en `reports/`.  
+Cada tropiezo dejó una mejora: carpetas prolijas, `.gitattributes`, umbral justificado y resultados reproducibles.
