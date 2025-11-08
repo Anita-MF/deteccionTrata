@@ -12,10 +12,10 @@ antes,consultante_genero,1051,0.1338,object,14
 antes,via_ingreso,617,0.0786,object,28
 antes,consultante_tipo,415,0.0528,object,5
 antes,situacion,10,0.0013,object,3
-antes,tema,5,0.0006,object,41
 antes,subtema,5,0.0006,object,816
-antes,fecha_ingreso,0,0.0,object,1687
-antes,es_anonima,0,0.0,object,3
-antes,origen,0,0.0,object,364
+antes,tema,5,0.0006,object,41
+antes,ï»¿fecha_ingreso,0,0.0,object,1687
 antes,nro_registro_interno,0,0.0,int64,7853
 antes,dependencia_alta,0,0.0,object,8
+antes,es_anonima,0,0.0,object,3
+antes,origen,0,0.0,object,364

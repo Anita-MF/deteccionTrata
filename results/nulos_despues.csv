@@ -11,11 +11,11 @@ despues,consultante_genero,1050,0.1337,object,14
 despues,via_ingreso,617,0.0786,object,28
 despues,consultante_tipo,415,0.0528,object,5
 despues,situacion,10,0.0013,object,3
-despues,tema,5,0.0006,object,41
-despues,es_trata,5,0.0006,float64,2
 despues,subtema,5,0.0006,object,816
+despues,es_trata,5,0.0006,float64,2
+despues,tema,5,0.0006,object,41
 despues,fecha_ingreso,0,0.0,object,1687
-despues,nro_registro_interno,0,0.0,int64,7853
-despues,es_anonima,0,0.0,object,3
 despues,origen,0,0.0,object,364
+despues,nro_registro_interno,0,0.0,int64,7853
 despues,dependencia_alta,0,0.0,object,8
+despues,es_anonima,0,0.0,object,3
