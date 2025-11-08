@@ -17,6 +17,35 @@
 📁 **Carpeta del proyecto (Drive):** [Abrir](https://drive.google.com/drive/folders/1Pi_5rFwRCzmmJpSQl1gV6k_Ke6B7OvzF?usp=drive_link)
 
 ---
+## Cómo reproducir
+
+```bash
+python -m pip install -r requirements.txt
+jupyter nbconvert --to notebook --execute notebooks/03_modelado_resultados.ipynb --output notebooks/03_modelado_resultados_run.ipynb
+Figuras: figs/
+
+Resultados (CSV/JSON/TXT): results/
+
+Modelo final: models/mejor_pipeline_calibrado.pkl (si tu notebook lo guarda)
+
+Umbral: results/threshold_opt.json
+
+Informe: reports/INFORME_Proyecto_Trata.pdf
+
+Inferencia rápida (demo)
+
+Prepará results/inferencia_input.csv con las mismas columnas que results/inferencia_template_columns.csv.
+
+python predict.py \
+  --model models/mejor_pipeline_calibrado.pkl \
+  --threshold-file results/threshold_opt.json \
+  --input-csv results/inferencia_input.csv \
+  --output-csv results/predicciones.csv
+
+Video — Entrega 3
+
+Duración: 5–7 minutos. Link: [agregar URL aquí].
+---
 
 ## 2) Datos
 - **Fuente:** `oficina-rescate-orientaciones-202001-202308.csv` (2020–2024).
