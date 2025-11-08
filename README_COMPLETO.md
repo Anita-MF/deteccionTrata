@@ -68,7 +68,7 @@
 - **Umbral óptimo** (seleccionado por PR con foco en Recall)  
   ![Matriz confusión óptima](figs/cm_Tuned-LogisticRegression_opt_cl6.png)
 
-**Calibración (reliability)**  
+**Curva de confiabilidad (calibración de probabilidades)**
 ![Curva de confiabilidad](figs/calibracion_reliability.png)
 
 > El detalle completo de métricas (Recall, F1, ROC-AUC, PR-AUC), backtesting temporal y Transferencia a TDF está en la **notebook** y en `results/`.
