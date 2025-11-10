@@ -46,6 +46,11 @@
 **Top localidades por tasa**  
 ![Top localidades (tasa)](figs/esp_top_localidades_tasa.png)
 
+### Implicancias para el modelado (a partir del EDA)
+- Validación **temporal** y **backtesting rolling-origin** para respetar la secuencia 2020→2024.
+- Derivación de variables de **estacionalidad** (mes/trimestre y sin/cos) y banderas operativas (fin de semana, anonimato).
+- Riesgo de **drift territorial** y por **nacionalidad** → monitoreo periódico y re-calibración si cambian los patrones.
+
 ---
 
 ## 3) Metodología
@@ -69,6 +74,21 @@
 - **Umbral operativo:** elegido por **PR** para **recall ≥ 0,80** sobre TEST.  
 - **Calibración:** comparación sin calibrar vs calibrado; mejora en **Brier** y **curva de confiabilidad**.  
 - **Tuning:** búsqueda de hiperparámetros; resultados intermedios en `results/hp_*`.
+
+### Arquitectura del pipeline
+- **Preprocesamiento (`prep`)**
+  - Numéricas: imputación simple + estandarización.
+  - Categóricas: imputación “missing” + **OneHot** con manejo de categorías desconocidas.
+  - Derivadas: `mes`, `trimestre`, componentes **sin/cos** (estacionalidad); banderas (`es_fin_semana`, `es_anonima`).
+- **Modelos**
+  - `LogisticRegression` (baseline) y **LogisticRegression + interacciones** (temporada×anonimato, provincia×anonimato, nacionalidad×temporada).
+  - `HistGradientBoostingClassifier` con/sin **calibración** (isotónica/Platt).
+- **Selección de umbral**
+  - Por **Precision–Recall** con **restricción: recall ≥ 0,80**, optimizando **F1** dentro del set factible.
+- **Tuning (resumen)**
+  - LR: `C` (escala log), `penalty` = l2, `class_weight` = balanced (cuando aporta).
+  - HGB: `learning_rate`, `max_depth`, `max_leaf_nodes`, `min_samples_leaf`.
+  - Resultados en: `results/hp_search_resumen.csv`, `results/hp_best_holdout_metrics.csv`.
 
 ---
 
@@ -192,6 +212,12 @@ requirements.txt
 ## 11) Entorno
 - Python 3.10  
 - `requirements.txt`: pandas ≥ 2.2 · numpy ≥ 1.26 · scikit-learn ≥ 1.4 · matplotlib ≥ 3.8 · scipy ≥ 1.12 · joblib ≥ 1.4
+
+## 11.1) Conclusiones finales e interpretación
+- El objetivo de **detección temprana** exige **alto recall**: el ajuste de **umbral por PR** sostuvo *Recall ≳ 0,95* con **pérdida acotada** de precisión.
+- La **calibración** mejoró la confiabilidad de probabilidades (↓ **Brier**) y habilita reglas operativas basadas en score.
+- En **TDF** (muestra chica) el modelo transfirió bien (Recall ≈ **1,00**); se recomienda **monitoreo mensual** y **re-calibración** si cambia la casuística.
+- Trabajo futuro: enriquecer variables (densidad poblacional, contexto económico, estacionalidad fina), **detección de drift** y *thresholding* adaptativo por región.
 
 ---
 
