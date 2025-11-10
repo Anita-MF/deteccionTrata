@@ -53,15 +53,6 @@
 
 ### Resultados del modelo
 
-**Curva Precision–Recall + umbral operativo**  
-![Curva PR LogReg](figs/pr_Tuned-LogisticRegression_c16.png)
-
-**Matriz de confusión @ umbral óptimo**  
-![CM óptima](figs/cm_Tuned-LogisticRegression_opt_c16.png)
-
-**Calibración (reliability)**  
-![Curva de confiabilidad](figs/calibracion_reliability.png)
-
 **Comparativo HGB (PR)**  
 ![PR HGB](figs/pr_HGB.png)
 
