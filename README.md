@@ -46,7 +46,7 @@ Validación **temporal** (split y **rolling-origin**), **estacionalidad** explí
 
 ### Aclaraciones de alcance y curado
 
-- **El archivo se distribuyó como oficina-rescate-orientaciones-202001-202308.csv (el nombre sugiere 2023), pero el contenido consolidado del proyecto alcanza hasta octubre de 2024; alcance final 2020–2024.
+- El archivo se distribuyó como oficina-rescate-orientaciones-202001-202308.csv (el nombre sugiere 2023), pero el contenido consolidado del proyecto alcanza hasta octubre de 2024; alcance final 2020–2024.
 - **Enriquecimiento de variables de contacto (no anónimas):** para mejorar la calidad de las métricas y el análisis territorial se **estandarizaron y completaron** `localidad`, `provincia` y `nacionalidad` cuando el registro **no era anónimo** (normalización de strings, catálogos de referencia y mapeos). En registros **anónimos** se respetó la condición y se codificó `es_anonima=1` sin intentar identificar.
 - **Estandarización adicional:** corrección de variantes ortográficas y tildes; uso de IDs/normalizadores cuando estaban disponibles.
 
