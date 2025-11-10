@@ -39,7 +39,7 @@
 - **Temporalidad:** picos hacia 2024; leve estacionalidad. Útil derivar `mes`, `trimestre` y componentes cíclicas (sin/cos).
 - **Territorio y nacionalidad:** alta concentración en algunas provincias/localidades y pocas nacionalidades (efecto “top-K”).
 
-> (Opcional) Si querés mostrar 1–2 gráficos de EDA, agregalos acá, por ejemplo:
+> Gáficos de EDA:
 > 
 ![Serie mensual total](higos/serie_mensual_total.png)
 ![Top consultante por provincia](higos/top_consultante_provincia.png)
