@@ -1,26 +1,29 @@
-﻿# Predicción de situaciones de trata de personas (2020-2024)
+# Predicción de situaciones de trata de personas (2020–2024)
 
-> **Proyecto de Aprendizaje Automático** Â· Tecnicatura en Ciencia de Datos e IA  
-> **Autora:** Ana María Fernández Â· **Ámbito:** Oficina de Rescate y Acompañamiento (AR)  
+> **Proyecto de Aprendizaje Automático** · Tecnicatura en Ciencia de Datos e IA  
+> **Autora:** Ana María Fernández · **Ámbito:** Oficina de Rescate y Acompañamiento (AR)  
 > **Enfoque territorial:** Tierra del Fuego (transferencia del modelo)
+
+---
 
 ## 1) Objetivo
 **Clasificar** si una intervención de la Oficina de Rescate (ene-2020 a oct-2024) corresponde a **trata (1)** o **no trata (0)**.
 
 - **Objetivo general:** construir un clasificador binario robusto y transferible a contextos de baja frecuencia (Tierra del Fuego).
 - **Objetivos específicos:**
-  1. EDA y preparación (valores faltantes, balance, patrones regionales).
-  2. Entrenar y comparar modelos supervisados priorizando **recall**.
-  3. **Transferencia local (TDF):** evaluar el mejor modelo nacional sobre el subconjunto local (n pequeÃ±o) y ajustar umbral si es necesario.
+  1. EDA y preparación (valores faltantes, balance, patrones regionales).  
+  2. Entrenar y comparar modelos supervisados priorizando **recall**.  
+  3. **Transferencia local (TDF):** evaluar el mejor modelo nacional sobre el subconjunto local (**n** pequeño) y ajustar umbral si es necesario.
 
-**Informe 1° entrega (PDF):** [`reports/INFORME_Proyecto_Trata.pdf`](reports/INFORME_Proyecto_Trata.pdf)
-**Informe 2° entrega (PDF):**
+**Informe 1.ª entrega (PDF):** [`reports/INFORME_Proyecto_Trata.pdf`](reports/INFORME_Proyecto_Trata.pdf)  
+**Informe 2.ª entrega (PDF):** *(agregar link si corresponde)*
+
 ---
 
 ## 2) Datos
-- **Fuente:** `oficina-rescate-orientaciones-202001-202308.csv` (2020-2024).
-- **Registros (forma final):** **7.848** filas Â· **26** variables.  
-- **Balance:** `es_trata=1` **54%** (4.241) / `0` **46%** (3.607).  
+- **Fuente:** `oficina-rescate-orientaciones-202001-202308.csv` (2020–2024).
+- **Registros (forma final):** **7.848** filas · **26** variables.  
+- **Balance:** `es_trata = 1` **54%** (4.241) / `0` **46%** (3.607).  
 - **Target:** `es_trata` (1/0).
 - **Principales transformaciones:** normalización de strings (lowercase/sin tildes), estandarización de provincia/localidad/nacionalidad, derivación temporal (año/mes/trimestre + sin/cos), banderas (`es_fin_semana`, `es_anonima`), uso de IDs geográficos cuando están disponibles.
 - **Calidad de datos:** tablas de nulos antes/después en `results/nulos_antes.csv` y `results/nulos_despues.csv`.
@@ -28,43 +31,29 @@
 ---
 
 ## 3) Metodología
-- Validación: split temporal (train/valid/test por fechas) sin fuga; backtesting rolling-origin mensual (2020-07 → 2024-12).
-- Optimización de umbral: por curva Precision–Recall, con restricción recall ≥ 0.80.
-- Calibración de probabilidades: Isotónica / Platt; evaluación por Brier score y curva de calibración.
-- Modelos evaluados:
-• Logistic Regression (baseline),
-• Logistic Regression + interacciones (temporada × anonimato, provincia × anonimato, nacionalidad × temporada),
-• HistGradientBoosting (con y sin calibración).
-- Reproducibilidad: pipelines y umbrales persistidos; semillas fijas
+- **Validación:** split **temporal** (train/valid/test por fechas) sin fuga; **backtesting rolling-origin** mensual (2020-07 → 2024-12).  
+- **Optimización de umbral:** por **curva Precision–Recall**, con restricción **recall ≥ 0,80**.  
+- **Calibración de probabilidades:** isotónica / Platt; evaluación por **Brier score** y **curva de calibración**.  
+- **Modelos evaluados:**
+  - Logistic Regression (baseline)  
+  - Logistic Regression + interacciones (temporada × anonimato, provincia × anonimato, nacionalidad × temporada)  
+  - HistGradientBoosting (con y sin calibración)  
+- **Reproducibilidad:** pipelines y umbrales persistidos; semillas fijas.
 
 ---
 
 ## 4) Resultados (resumen)
-- **Modelo seleccionado (operativo):** **Logistic Regression + interacciones** con **umbral = 0.345** (PR con recall â‰¥ 0.80).  
-  **Test:** **Precision 0.563 Â· Recall 0.972 Â· F1 0.713 Â· ROC-AUC 0.623**.
-- **Alternativa si se prioriza F1/ROC:** **HistGradientBoosting calibrado** con **umbral = 0.396**.  
-  **Test:** **Precision 0.562 Â· Recall 0.958 Â· F1 0.708 Â· ROC-AUC 0.659 Â· AP 0.685**  
-  (Brier **0.243 â†’ 0.234** tras calibraciÃ³n).
-- **Modelo base (referencia):** **Tuned-LogisticRegression @ thr = 0.328**.  
-  **Test:** **Precision 0.559 Â· Recall 0.951 Â· F1 0.704 Â· AP 0.667 Â· ROC-AUC 0.628**.
-- **Backtesting temporal (promedios):** **Precision 0.647 Â· Recall 0.686 Â· F1 0.651**.
-
-- 4) Resultados (resumen)
-• 	Modelo seleccionado (operativo):
-Logistic Regression + interacciones, con umbral = 0.345 (curva PR con recall ≥ 0.80).
-Test: Precision 0.563 · Recall 0.972 · F1 0.713 · ROC-AUC 0.623.
-• 	Alternativa si se prioriza F1/ROC:
-HistGradientBoosting calibrado, con umbral = 0.396.
-Test: Precision 0.562 · Recall 0.958 · F1 0.708 · ROC-AUC 0.659 · AP 0.685
-(Brier 0.243 → 0.234 tras calibración).
-• 	Modelo base (referencia):
-Tuned Logistic Regression @ thr = 0.328.
-Test: Precision 0.559 · Recall 0.951 · F1 0.704 · AP 0.667 · ROC-AUC 0.628.
-• 	Backtesting temporal (promedios):
-Precision 0.647 · Recall 0.686 · F1 0.651.
+- **Modelo seleccionado (operativo):** **Logistic Regression + interacciones** con **umbral = 0,345** (PR con recall ≥ 0,80).  
+  **Test:** **Precision 0,563 · Recall 0,972 · F1 0,713 · ROC-AUC 0,623**.
+- **Alternativa si se prioriza F1/ROC:** **HistGradientBoosting calibrado** con **umbral = 0,396**.  
+  **Test:** **Precision 0,562 · Recall 0,958 · F1 0,708 · ROC-AUC 0,659 · AP 0,685**  
+  (Brier **0,243 → 0,234** tras calibración).  
+- **Modelo base (referencia):** **Tuned-LogisticRegression @ thr = 0,328**.  
+  **Test:** **Precision 0,559 · Recall 0,951 · F1 0,704 · AP 0,667 · ROC-AUC 0,628**.  
+- **Backtesting temporal (promedios):** **Precision 0,647 · Recall 0,686 · F1 0,651**.
 
 **Archivos clave exportados**
-- MÃ©tricas/tablas:  
+- Métricas/tablas:  
   `results/modelos_metricas.csv`, `results/hp_search_resumen.csv`, `results/hp_best_holdout_metrics.csv`,  
   `results/best_metrics_Tuned-LogisticRegression_c16.csv`,  
   `results/best_threshold_Tuned-LogisticRegression_c16.json`,  
@@ -73,35 +62,34 @@ Precision 0.647 · Recall 0.686 · F1 0.651.
   `figs/pr_Tuned-LogisticRegression_c16.png`, `figs/pr_HGB.png`, `figs/roc_HGB.png`,  
   `figs/cm_Tuned-LogisticRegression_050_c16.png`, `figs/cm_Tuned-LogisticRegression_opt_c16.png`
 
-### Resultados (vista rÃ¡pida con imÃ¡genes)
+### Resultados (vista rápida con imágenes)
 
-**Curva Precisionâ€“Recall + umbral operativo**  
+**Curva Precision–Recall + umbral operativo**  
 ![Curva PR](figs/pr_Tuned-LogisticRegression_c16.png)
 
-**Matrices de confusiÃ³n**  
-- **Umbral 0.50** (baseline)  
-  ![Matriz confusiÃ³n 0.50](figs/cm_Tuned-LogisticRegression_050_c16.png)
+**Matrices de confusión**  
+- **Umbral 0,50** (baseline)  
+  ![Matriz confusión 0.50](figs/cm_Tuned-LogisticRegression_050_c16.png)
 
-- **Umbral Ã³ptimo** (seleccionado por PR con foco en Recall)  
-  ![Matriz confusiÃ³n Ã³ptima](figs/cm_Tuned-LogisticRegression_opt_c16.png)
+- **Umbral óptimo** (seleccionado por PR con foco en recall)  
+  ![Matriz confusión óptima](figs/cm_Tuned-LogisticRegression_opt_c16.png)
 
-**CalibraciÃ³n (reliability)**  
+**Calibración (reliability)**  
 ![Curva de confiabilidad](figs/calibracion_reliability.png)
 
-
-> El detalle completo de mÃ©tricas (Recall, F1, ROC-AUC, PR-AUC), backtesting temporal y Transferencia a TDF estÃ¡ en la **notebook** y en `results/`.
+> El detalle completo de métricas (Recall, F1, ROC-AUC, PR-AUC), backtesting temporal y transferencia a TDF está en la **notebook** y en `results/`.
 
 ---
 
 ## 5) Transferencia a Tierra del Fuego
-- EvaluaciÃ³n del mejor clasificador nacional sobre **TDF** (muestra chica).  
-- Con **LogReg + interacciones** y **mismo umbral (0.345)** en corrida especÃ­fica (**n=30**, **positivos=22**):  
-  **Precision 0.733 Â· Recall 1.00 Â· F1 0.846**.  
-  *Cautela por bajo N; monitoreo mensual y recalibraciÃ³n si cambia la casuÃ­stica.*
+- Evaluación del mejor clasificador nacional sobre **TDF** (muestra chica).  
+- Con **LogReg + interacciones** y **mismo umbral (0,345)** en corrida específica (**n = 30**, **positivos = 22**):  
+  **Precision 0,733 · Recall 1,00 · F1 0,846**.  
+  *Cautela por bajo N; monitoreo mensual y recalibración si cambia la casuística.*
 
 ---
 
-## 6) CÃ³mo reproducir
+## 6) Cómo reproducir
 
 ```bash
 python -m pip install -r requirements.txt
@@ -110,12 +98,12 @@ jupyter nbconvert --to notebook --execute notebooks/03_modelado_resultados.ipynb
 
 - Figuras: `figs/`  
 - Resultados (CSV/JSON/TXT): `results/`  
-- Modelo final: `models/mejor_pipeline_calibrado.pkl` (si la notebook lo guarda)  
+- Modelo final: `models/mejor_pipeline_calibrado.pkl` *(si la notebook lo guarda)*  
 - Umbral: `results/threshold_opt.json`  
 - Informe: `reports/INFORME_Proyecto_Trata.pdf`
 
-### Inferencia rÃ¡pida (demo, opcional)
-Si agregÃ¡s `predict.py` (script de inferencia), corrÃ©:
+### Inferencia rápida (demo, opcional)
+Si agregás `predict.py` (script de inferencia), corré:
 ```bash
 python predict.py   --model models/mejor_pipeline_calibrado.pkl   --threshold-file results/threshold_opt.json   --input-csv results/inferencia_input.csv   --output-csv results/predicciones.csv
 ```
@@ -125,45 +113,62 @@ python predict.py   --model models/mejor_pipeline_calibrado.pkl   --threshold-fi
 
 ## 7) Estructura del repositorio
 ```
-â”œâ”€ data/
-â”‚  â”œâ”€ raw/       # CSV originales
-â”‚  â””â”€ curated/   # dataset canÃ³nico/curado
-â”œâ”€ notebooks/
-â”‚  â””â”€ 03_modelado_resultados.ipynb
-â”œâ”€ results/      # mÃ©tricas/tablas/umbrales
-â”œâ”€ figs/         # figuras exportadas
-â”œâ”€ reports/
-â”‚  â””â”€ INFORME_Proyecto_Trata.pdf
-â”œâ”€ utils/
-â”œâ”€ requirements.txt
-â””â”€ README.md
+├─ data/
+│  ├─ raw/         # CSV originales
+│  └─ curated/     # dataset canónico/curado
+├─ notebooks/
+│  └─ 03_modelado_resultados.ipynb
+├─ results/        # métricas/tablas/umbrales
+├─ figs/           # figuras exportadas
+├─ reports/
+│  └─ INFORME_Proyecto_Trata.pdf
+├─ utils/
+├─ requirements.txt
+└─ README.md
 ```
 
 ---
 
-## 8) Consideraciones Ã©ticas y privacidad
-- AnonimizaciÃ³n estricta; no publicar PII. Uso educativo con orientaciÃ³n a mejora operativa.
+## 8) Consideraciones éticas y privacidad
+- Anonimización estricta; no publicar PII. Uso educativo con orientación a mejora operativa.
+
+---
 
 ## 9) Entorno
 - Python 3.10  
-- `requirements.txt`: pandas â‰¥ 2.2 Â· numpy â‰¥ 1.26 Â· scikit-learn â‰¥ 1.4 Â· matplotlib â‰¥ 3.8 Â· scipy â‰¥ 1.12 Â· joblib â‰¥ 1.4
+- `requirements.txt`: pandas ≥ 2.2 · numpy ≥ 1.26 · scikit-learn ≥ 1.4 · matplotlib ≥ 3.8 · scipy ≥ 1.12 · joblib ≥ 1.4
+
+---
 
 ## 10) Citas y marco de clase
-- Clase 4: RegresiÃ³n lineal/logÃ­stica Â· Clase 5: KNN/Ãrboles Â· Clase 6: SVM/SGD Â· Clase 8: Clustering.  
-  Material y prÃ¡cticas de la Tecnicatura.
+- Clase 4: Regresión lineal/logística · Clase 5: KNN/Árboles · Clase 6: SVM/SGD · Clase 8: Clustering.  
+  Material y prácticas de la Tecnicatura.
 
 ---
 
-## 11) Video â€” Entrega 3
-DuraciÃ³n: **5â€“7 minutos**. Link: **(agregar URL)**.
+## 11) Video — Entrega 3
+Duración: **5–7 minutos**. Link: **(agregar URL)**.
 
 ---
 
-## 12) BitÃ¡cora del proceso del proyecto
-Este proyecto no naciÃ³ â€œordenadoâ€: errores de rutas y carpetas llevaron a crear `figs/` y `results/`, usar rutas relativas y versionar salidas.  
-En modelado, todo quedÃ³ dentro de **Pipeline**, se priorizÃ³ **recall** y se ajustÃ³ el **umbral** por **PR** (aceptando mÃ¡s FP para detecciÃ³n temprana).  
-En GitHub aparecieron *mixed line endings*, PDFs tratados como texto y figuras que se ven sÃ³lo en **github.dev**; mientras se estabiliza, los **PDF/figuras** se respaldan en `reports/`.  
-Cada tropiezo dejÃ³ una mejora: carpetas prolijas, `.gitattributes`, umbral justificado y resultados reproducibles.
+## 12) Bitácora del proceso del proyecto
+Este proyecto no nació “ordenado”: errores de rutas y carpetas llevaron a crear `figs/` y `results/`, usar rutas relativas y versionar salidas.  
+En modelado, todo quedó dentro de **Pipeline**, se priorizó **recall** y se ajustó el **umbral** por **PR** (aceptando más FP para detección temprana).  
+En GitHub aparecieron *mixed line endings*, PDFs tratados como texto y figuras que se ven solo en **github.dev**; mientras se estabiliza, los **PDF/figuras** se respaldan en `reports/`.  
+Cada tropiezo dejó una mejora: carpetas prolijas, `.gitattributes`, umbral justificado y resultados reproducibles.
+
+---
+
+### Nota para evitar que se rompan tildes e imágenes
+- Guardá este archivo como **UTF-8** (sin BOM).  
+- En `.gitattributes`, asegurá:
+  ```
+  *.png binary
+  *.jpg binary
+  *.jpeg binary
+  *.pdf binary
+  *.ipynb -text
+  ```
 
 
 
