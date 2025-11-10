@@ -152,7 +152,7 @@ Python 3.10 · pandas ≥ 2.2 · numpy ≥ 1.26 · scikit-learn ≥ 1.4 · matpl
 
 ---
 
-## 12) Citas y marco de clase**
+## Citas y marco de clase
 Clase 4: Regresión lineal/logística · Clase 5: KNN/Árboles · Clase 6: SVM/SGD · Clase 8: Clustering · Clase 9: PCA.
 
 ---
