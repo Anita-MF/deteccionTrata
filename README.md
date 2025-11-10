@@ -13,26 +13,29 @@
   2. Entrenar y comparar modelos supervisados priorizando **recall**.
   3. **Transferencia local (TDF):** evaluar el mejor modelo nacional sobre el subconjunto local (n pequeÃ±o) y ajustar umbral si es necesario.
 
-ðŸ“„ **Informe completo (PDF):** [`reports/INFORME_Proyecto_Trata.pdf`](reports/INFORME_Proyecto_Trata.pdf)
-
+**Informe 1° entrega (PDF):** [`reports/INFORME_Proyecto_Trata.pdf`](reports/INFORME_Proyecto_Trata.pdf)
+**Informe 2° entrega (PDF):**
 ---
 
 ## 2) Datos
-- **Fuente:** `oficina-rescate-orientaciones-202001-202308.csv` (2020â€“2024).
+- **Fuente:** `oficina-rescate-orientaciones-202001-202308.csv` (2020-2024).
 - **Registros (forma final):** **7.848** filas Â· **26** variables.  
 - **Balance:** `es_trata=1` **54%** (4.241) / `0` **46%** (3.607).  
 - **Target:** `es_trata` (1/0).
-- **Principales transformaciones:** normalizaciÃ³n de strings (lowercase/sin tildes), estandarizaciÃ³n de provincia/localidad/nacionalidad, derivaciÃ³n temporal (aÃ±o/mes/trimestre + sin/cos), banderas (`es_fin_semana`, `es_anonima`), uso de IDs geogrÃ¡ficos cuando estÃ¡n disponibles.
-- **Calidad de datos:** tablas de nulos antes/despuÃ©s en `results/nulos_antes.csv` y `results/nulos_despues.csv`.
+- **Principales transformaciones:** normalización de strings (lowercase/sin tildes), estandarización de provincia/localidad/nacionalidad, derivación temporal (año/mes/trimestre + sin/cos), banderas (`es_fin_semana`, `es_anonima`), uso de IDs geográficos cuando están disponibles.
+- **Calidad de datos:** tablas de nulos antes/después en `results/nulos_antes.csv` y `results/nulos_despues.csv`.
 
 ---
 
-## 3) MetodologÃ­a
-- **ValidaciÃ³n:** split **temporal** (train/valid/test por fechas) sin fuga; **backtesting rolling-origin** mensual (2020-07â†’2024-12).
-- **OptimizaciÃ³n de umbral:** por **curva Precisionâ€“Recall** con restricciÃ³n **recall â‰¥ 0.80**.
-- **CalibraciÃ³n de probabilidades:** IsotÃ³nica/Platt; evaluaciÃ³n por **Brier** y curva de calibraciÃ³n.
-- **Modelos evaluados:** Logistic Regression (base), **Logistic Regression + interacciones** (temporadaÃ—anonimato, provinciaÃ—anonimato, nacionalidadÃ—temporada) y **HistGradientBoosting** (con/sin calibraciÃ³n).
-- **Reproducibilidad:** pipelines y umbrales persistidos; semillas fijas.
+## 3) Metodología
+- Validación: split temporal (train/valid/test por fechas) sin fuga; backtesting rolling-origin mensual (2020-07 → 2024-12).
+- Optimización de umbral: por curva Precision–Recall, con restricción recall ≥ 0.80.
+- Calibración de probabilidades: Isotónica / Platt; evaluación por Brier score y curva de calibración.
+- Modelos evaluados:
+• Logistic Regression (baseline),
+• Logistic Regression + interacciones (temporada × anonimato, provincia × anonimato, nacionalidad × temporada),
+• HistGradientBoosting (con y sin calibración).
+- Reproducibilidad: pipelines y umbrales persistidos; semillas fijas
 
 ---
 
@@ -147,5 +150,6 @@ Este proyecto no naciÃ³ â€œordenadoâ€: errores de rutas y carpetas ll
 En modelado, todo quedÃ³ dentro de **Pipeline**, se priorizÃ³ **recall** y se ajustÃ³ el **umbral** por **PR** (aceptando mÃ¡s FP para detecciÃ³n temprana).  
 En GitHub aparecieron *mixed line endings*, PDFs tratados como texto y figuras que se ven sÃ³lo en **github.dev**; mientras se estabiliza, los **PDF/figuras** se respaldan en `reports/`.  
 Cada tropiezo dejÃ³ una mejora: carpetas prolijas, `.gitattributes`, umbral justificado y resultados reproducibles.
+
 
 
