@@ -15,8 +15,8 @@
   2. Entrenar y comparar modelos supervisados priorizando **recall**.  
   3. **Transferencia local (TDF):** evaluar el mejor modelo nacional sobre el subconjunto local (**n** pequeño) y ajustar umbral si es necesario.
 
-**Informe 1.ª entrega (PDF):** [reports/INFORME 1° ENTREGA.pdf](reports/INFORME%201%C2%B0%20ENTREGA.pdf)  
-**Informe 2.ª entrega (PDF):** [reports/INFORME 2° ENTREGA.pdf](reports/INFORME%202%C2%B0%20ENTREGA.pdf)
+**Informe 1.ª entrega (PDF):** [reports/INFORME 1° ENTREGA.pdf](reports/INFORME_1_ENTREGA.pdf)  
+**Informe 2.ª entrega (PDF):** [reports/INFORME 2° ENTREGA.pdf](reports/INFORME_2_ENTREGA.pdf)
 
 ---
 
