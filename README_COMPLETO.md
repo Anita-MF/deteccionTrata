@@ -121,7 +121,8 @@ python predict.py   --model models/mejor_pipeline_calibrado.pkl   --threshold-fi
 ├─ results/        # métricas/tablas/umbrales
 ├─ figs/           # figuras exportadas
 ├─ reports/
-│  └─ INFORME_Proyecto_Trata.pdf
+│  └─ INFORME_1_ENTREGA.pdf
+   └─ INFORME_2_ENTREGA.pdf
 ├─ utils/
 ├─ requirements.txt
 └─ README.md
