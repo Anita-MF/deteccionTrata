@@ -49,6 +49,20 @@
   **Test:** **Precision 0.559 Â· Recall 0.951 Â· F1 0.704 Â· AP 0.667 Â· ROC-AUC 0.628**.
 - **Backtesting temporal (promedios):** **Precision 0.647 Â· Recall 0.686 Â· F1 0.651**.
 
+- 4) Resultados (resumen)
+• 	Modelo seleccionado (operativo):
+Logistic Regression + interacciones, con umbral = 0.345 (curva PR con recall ≥ 0.80).
+Test: Precision 0.563 · Recall 0.972 · F1 0.713 · ROC-AUC 0.623.
+• 	Alternativa si se prioriza F1/ROC:
+HistGradientBoosting calibrado, con umbral = 0.396.
+Test: Precision 0.562 · Recall 0.958 · F1 0.708 · ROC-AUC 0.659 · AP 0.685
+(Brier 0.243 → 0.234 tras calibración).
+• 	Modelo base (referencia):
+Tuned Logistic Regression @ thr = 0.328.
+Test: Precision 0.559 · Recall 0.951 · F1 0.704 · AP 0.667 · ROC-AUC 0.628.
+• 	Backtesting temporal (promedios):
+Precision 0.647 · Recall 0.686 · F1 0.651.
+
 **Archivos clave exportados**
 - MÃ©tricas/tablas:  
   `results/modelos_metricas.csv`, `results/hp_search_resumen.csv`, `results/hp_best_holdout_metrics.csv`,  
@@ -150,6 +164,7 @@ Este proyecto no naciÃ³ â€œordenadoâ€: errores de rutas y carpetas ll
 En modelado, todo quedÃ³ dentro de **Pipeline**, se priorizÃ³ **recall** y se ajustÃ³ el **umbral** por **PR** (aceptando mÃ¡s FP para detecciÃ³n temprana).  
 En GitHub aparecieron *mixed line endings*, PDFs tratados como texto y figuras que se ven sÃ³lo en **github.dev**; mientras se estabiliza, los **PDF/figuras** se respaldan en `reports/`.  
 Cada tropiezo dejÃ³ una mejora: carpetas prolijas, `.gitattributes`, umbral justificado y resultados reproducibles.
+
 
 
 
