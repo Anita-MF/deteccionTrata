@@ -67,14 +67,9 @@
   - [`results/classification_report_Tuned-LogisticRegression_opt_c16.txt`](results/classification_report_Tuned-LogisticRegression_opt_c16.txt)
 
 - **Figuras (ejemplos)**
-  - [`figs/pr_Tuned-LogisticRegression_c16.png`](figs/pr_Tuned-LogisticRegression_c16.png)
-  - [`figs/cm_Tuned-LogisticRegression_050_c16.png`](figs/cm_Tuned-LogisticRegression_050_c16.png)
-  - [`figs/cm_Tuned-LogisticRegression_opt_c16.png`](figs/cm_Tuned-LogisticRegression_opt_c16.png)
-  - [`figs/pr_HGB.png`](figs/pr_HGB.png)
-  - [`figs/roc_HGB.png`](figs/roc_HGB.png)
-  - [`figs/calibracion_reliability.png`](figs/calibracion_reliability.png)
+ - **Figuras:** se visualizan en la sección [Resultados](#resultados) y también pueden descargarse desde la carpeta [`figs/`](figs/).
 
-
+<a id="resultados"></a>
 ### Resultados (vista rápida con imágenes)
 
 **Curva Precision–Recall + umbral operativo**  
