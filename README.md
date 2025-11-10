@@ -41,7 +41,7 @@
 
 > Gáficos de EDA:
 > 
-![Serie mensual total](figs/serie_mensual_total.png)
+![Serie mensual total](figs/serie_mensual_final_total.png)
 ![Top consultante por provincia](figs/top_consultante_provincia.png)
 
 ---
