@@ -44,7 +44,7 @@
 **Implicancias para el modelado**  
 Validación **temporal** (split y **rolling-origin**), **estacionalidad** explícita, monitoreo de **drift** territorial/nacionalidad y posible **recalibración**.
 
-### 2.2) Aclaraciones de alcance y curado
+### Aclaraciones de alcance y curado
 
 - **Alcance temporal / nombre del archivo:** la fuente principal es `oficina-rescate-orientaciones-202001-202308.csv` y **contempla hasta agosto de 2023**. En versiones tempranas quedó mencionado *2024* por error; el alcance final del proyecto se **unifica en 2020–2023**.
 - **Enriquecimiento de variables de contacto (no anónimas):** para mejorar la calidad de las métricas y el análisis territorial se **estandarizaron y completaron** `localidad`, `provincia` y `nacionalidad` cuando el registro **no era anónimo** (normalización de strings, catálogos de referencia y mapeos). En registros **anónimos** se respetó la condición y se codificó `es_anonima=1` sin intentar identificar.
