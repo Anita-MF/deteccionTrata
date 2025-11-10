@@ -32,6 +32,18 @@
 - **Principales transformaciones:** normalización de strings (lowercase/sin tildes), estandarización de provincia/localidad/nacionalidad, derivación temporal (año/mes/trimestre + sin/cos), banderas (`es_fin_semana`, `es_anonima`), uso de IDs geográficos cuando están disponibles.
 - **Calidad de datos:** tablas de nulos antes/después en `results/nulos_antes.csv` y `results/nulos_despues.csv`.
 
+
+## 2.1) EDA (extracto)
+
+- **Distribución del target:** `es_trata=1` ≈54% (clase positiva mayoritaria); no se requiere re-balanceo duro para el baseline.
+- **Temporalidad:** picos hacia 2024; leve estacionalidad. Útil derivar `mes`, `trimestre` y componentes cíclicas (sin/cos).
+- **Territorio y nacionalidad:** alta concentración en algunas provincias/localidades y pocas nacionalidades (efecto “top-K”).
+
+> (Opcional) Si querés mostrar 1–2 gráficos de EDA, agregalos acá, por ejemplo:
+> 
+> ![Serie mensual (total/positivos)](figs/serie_mensual_total.png)
+> ![Top-K provincias (cantidad)](figs/top_consultante_provincia.png)
+
 ---
 
 ## 3) Metodología
@@ -43,6 +55,8 @@
   - Logistic Regression + interacciones (temporada × anonimato, provincia × anonimato, nacionalidad × temporada)  
   - HistGradientBoosting (con y sin calibración)  
 - **Reproducibilidad:** pipelines y umbrales persistidos; semillas fijas.
+
+- **Hiperparámetros:** búsqueda (grid/bayes) con validación temporal; mejores combinaciones y métricas intermedias en `results/hp_search_resumen.csv` y `results/hp_best_holdout_metrics.csv`.
 
 ---
 
