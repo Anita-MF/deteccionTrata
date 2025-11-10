@@ -41,8 +41,8 @@
 
 > (Opcional) Si querés mostrar 1–2 gráficos de EDA, agregalos acá, por ejemplo:
 > 
-> ![Serie mensual (total/positivos)](figs/serie_mensual_total.png)
-> ![Top-K provincias (cantidad)](figs/top_consultante_provincia.png)
+![Serie mensual total](higos/serie_mensual_total.png)
+![Top consultante por provincia](higos/top_consultante_provincia.png)
 
 ---
 
