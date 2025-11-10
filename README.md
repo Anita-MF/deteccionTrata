@@ -15,8 +15,12 @@
   2. Entrenar y comparar modelos supervisados priorizando **recall**.  
   3. **Transferencia local (TDF):** evaluar el mejor modelo nacional sobre el subconjunto local (**n** pequeño) y ajustar umbral si es necesario.
 
-**Informe 1.ª entrega (PDF):** [reports/INFORME 1° ENTREGA.pdf](reports/INFORME_1_ENTREGA.pdf)  
-**Informe 2.ª entrega (PDF):** [reports/INFORME 2° ENTREGA.pdf](reports/INFORME_2_ENTREGA.pdf)
+> **Informes (PDF):**  
+> - 1.ª entrega → [reports/INFORME_1_ENTREGA.pdf](reports/INFORME_1_ENTREGA.pdf)  
+> - 2.ª entrega → [reports/INFORME_2_ENTREGA.pdf](reports/INFORME_2_ENTREGA.pdf)  
+> - 3.ª entrega → [reports/INFORME_3_ENTREGA.pdf](reports/INFORME_3_ENTREGA.pdf)
+
+> **Video (7 min):** [link al video](https://…)  _(cuando lo tengas)_
 
 ---
 
@@ -65,17 +69,21 @@
 ### Resultados (vista rápida con imágenes)
 
 **Curva Precision–Recall + umbral operativo**  
-![Curva PR](figs/pr_Tuned-LogisticRegression_c16.png)
+![Curva PR](figs/pr_Tuned-LogisticRegression_c16.png)  
+<sub>Selección de umbral por PR con objetivo de **recall ≥ 0.80**.</sub>
 
 **Matrices de confusión**  
-- **Umbral 0,50** (baseline)  
-  ![Matriz confusión 0.50](figs/cm_Tuned-LogisticRegression_050_c16.png)
+- **Umbral 0.50** (baseline)  
+  ![Matriz confusión 0.50](figs/cm_Tuned-LogisticRegression_050_c16.png)  
+  <sub>Test @0.50 — Precisión **0.591**, Recall **0.868**, F1 **0.703**.</sub>
 
 - **Umbral óptimo** (seleccionado por PR con foco en recall)  
-  ![Matriz confusión óptima](figs/cm_Tuned-LogisticRegression_opt_c16.png)
+  ![Matriz confusión óptima](figs/cm_Tuned-LogisticRegression_opt_c16.png)  
+  <sub>Test @óptimo — Precisión **0.562**, Recall **0.958–0.972** (según corrida), F1 **≈0.708–0.713**.</sub>
 
 **Calibración (reliability)**  
-![Curva de confiabilidad](figs/calibracion_reliability.png)
+![Curva de confiabilidad](figs/calibracion_reliability.png)  
+<sub>HistGradientBoosting calibrado vs sin calibrar — Brier **0.243 → 0.234**, ROC-AUC **≈0.657**, AP **≈0.685**.</sub>
 
 > El detalle completo de métricas (Recall, F1, ROC-AUC, PR-AUC), backtesting temporal y transferencia a TDF está en la **notebook** y en `results/`.
 
