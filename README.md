@@ -1,15 +1,15 @@
-﻿# PredicciÃ³n de situaciones de trata de personas (2020â€“2024) â€” README
+﻿# Predicción de situaciones de trata de personas (2020-2024)
 
-> **Proyecto de Aprendizaje AutomÃ¡tico** Â· Tecnicatura en Ciencia de Datos e IA  
-> **Autora:** Ana MarÃ­a FernÃ¡ndez Â· **Ãmbito:** Oficina de Rescate y AcompaÃ±amiento (AR)  
+> **Proyecto de Aprendizaje Automático** Â· Tecnicatura en Ciencia de Datos e IA  
+> **Autora:** Ana María Fernández Â· **Ámbito:** Oficina de Rescate y Acompañamiento (AR)  
 > **Enfoque territorial:** Tierra del Fuego (transferencia del modelo)
 
 ## 1) Objetivo
-**Clasificar** si una intervenciÃ³n de la Oficina de Rescate (ene-2020 a oct-2024) corresponde a **trata (1)** o **no trata (0)**.
+**Clasificar** si una intervención de la Oficina de Rescate (ene-2020 a oct-2024) corresponde a **trata (1)** o **no trata (0)**.
 
 - **Objetivo general:** construir un clasificador binario robusto y transferible a contextos de baja frecuencia (Tierra del Fuego).
-- **Objetivos especÃ­ficos:**
-  1. EDA y preparaciÃ³n (valores faltantes, balance, patrones regionales).
+- **Objetivos específicos:**
+  1. EDA y preparación (valores faltantes, balance, patrones regionales).
   2. Entrenar y comparar modelos supervisados priorizando **recall**.
   3. **Transferencia local (TDF):** evaluar el mejor modelo nacional sobre el subconjunto local (n pequeÃ±o) y ajustar umbral si es necesario.
 
@@ -147,4 +147,5 @@ Este proyecto no naciÃ³ â€œordenadoâ€: errores de rutas y carpetas ll
 En modelado, todo quedÃ³ dentro de **Pipeline**, se priorizÃ³ **recall** y se ajustÃ³ el **umbral** por **PR** (aceptando mÃ¡s FP para detecciÃ³n temprana).  
 En GitHub aparecieron *mixed line endings*, PDFs tratados como texto y figuras que se ven sÃ³lo en **github.dev**; mientras se estabiliza, los **PDF/figuras** se respaldan en `reports/`.  
 Cada tropiezo dejÃ³ una mejora: carpetas prolijas, `.gitattributes`, umbral justificado y resultados reproducibles.
+
 
