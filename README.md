@@ -158,7 +158,7 @@ Clase 4: Regresión lineal/logística · Clase 5: KNN/Árboles · Clase 6: SVM/S
 ---
 
 ## Video — Entrega 3
-Duración: **5–7 minutos**. Link: **(agregar URL)**.
+Duración: **5–7 minutos**. Link: **https://drive.google.com/file/d/1WemORDxNDlCA3UfL3D2rWfUJZE95iKYS/view?usp=drive_link**.
 
 ---
 
