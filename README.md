@@ -1,4 +1,4 @@
-# Predicción de situaciones de trata de personas (2020–2023)
+# Predicción de situaciones de trata de personas (2020–2024)
 
 > **Proyecto de Aprendizaje Automático** · Tecnicatura en Ciencia de Datos e IA  
 > **Autora:** Ana María Fernández · **Ámbito:** Oficina de Rescate y Acompañamiento (AR)  
@@ -7,7 +7,7 @@
 ---
 
 ## Objetivo
-**Clasificar** si una intervención de la Oficina de Rescate (ene-2020 a ago-2023) corresponde a **trata (1)** o **no trata (0)**.
+**Clasificar** si una intervención de la Oficina de Rescate (ene-2020 a oct-2024) corresponde a **trata (1)** o **no trata (0)**.
 
 - **Objetivo general:** construir un clasificador binario robusto y transferible a contextos de baja frecuencia (Tierra del Fuego).
 - **Objetivos específicos:**
@@ -24,7 +24,7 @@
 ---
 
 ## Datos
-- **Fuente:** `oficina-rescate-orientaciones-202001-202308.csv` (2020–2023).
+- **Fuente:** `oficina-rescate-orientaciones-202001-202308.csv` (2020–2024). Cabe señalar que el nombre consignado en el dataset presenta un error, dado que los datos incluidos abarcan únicamente hasta octubre de 2024.
 - **Registros (forma final):** **7.848** filas · **26** variables.  
 - **Balance:** `es_trata = 1` **54%** (4.241) / `0` **46%** (3.607).  
 - **Target:** `es_trata` (1/0).
@@ -46,7 +46,7 @@ Validación **temporal** (split y **rolling-origin**), **estacionalidad** explí
 
 ### Aclaraciones de alcance y curado
 
-- **Alcance temporal / nombre del archivo:** la fuente principal es `oficina-rescate-orientaciones-202001-202308.csv` y **contempla hasta agosto de 2023**. En versiones tempranas quedó mencionado *2024* por error; el alcance final del proyecto se **unifica en 2020–2023**.
+- **El archivo se distribuyó como oficina-rescate-orientaciones-202001-202308.csv (el nombre sugiere 2023), pero el contenido consolidado del proyecto alcanza hasta octubre de 2024; alcance final 2020–2024.
 - **Enriquecimiento de variables de contacto (no anónimas):** para mejorar la calidad de las métricas y el análisis territorial se **estandarizaron y completaron** `localidad`, `provincia` y `nacionalidad` cuando el registro **no era anónimo** (normalización de strings, catálogos de referencia y mapeos). En registros **anónimos** se respetó la condición y se codificó `es_anonima=1` sin intentar identificar.
 - **Estandarización adicional:** corrección de variantes ortográficas y tildes; uso de IDs/normalizadores cuando estaban disponibles.
 
