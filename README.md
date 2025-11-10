@@ -114,7 +114,7 @@ jupyter nbconvert --to notebook --execute notebooks/03_modelado_resultados.ipynb
 
 ---
 
-## 9) Estructura del repositorio
+## 9) Estructura del repositorio — basada en Cookiecutter Data Science (adaptada a la cursada)
 ```
 data/
   raw/         # datos crudos
