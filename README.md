@@ -40,9 +40,39 @@
 - **Territorio y nacionalidad:** alta concentración en algunas provincias/localidades y pocas nacionalidades (efecto “top-K”).
 
 > Gáficos de EDA:
-> 
-![Serie mensual total](figs/serie_mensual_final_total.png)
-![Top consultante por provincia](figs/top_consultante_provincia.png)
+### Exploración (resumen)
+
+**Serie mensual — total (legible)**  
+![Serie mensual total](figs/serie_mensual_total_legible.png)
+
+**Top provincias por intervenciones**  
+![Top provincias (intervenciones)](figs/esp_top_provincias_int.png)
+
+**Top localidades por tasa**  
+![Top localidades (tasa)](figs/esp_top_localidades_tasa.png)
+
+### Resultados del modelo
+
+**Curva Precision–Recall + umbral operativo**  
+![Curva PR LogReg](figs/pr_Tuned-LogisticRegression_c16.png)
+
+**Matriz de confusión @ umbral óptimo**  
+![CM óptima](figs/cm_Tuned-LogisticRegression_opt_c16.png)
+
+**Calibración (reliability)**  
+![Curva de confiabilidad](figs/calibracion_reliability.png)
+
+**Comparativo HGB (PR)**  
+![PR HGB](figs/pr_HGB.png)
+
+**ROC HGB**  
+![ROC HGB](figs/roc_HGB.png)
+-->
+
+**TDF — Intervenciones por trimestre**  
+![TDF intervenciones](figs/tdf_intervenciones_trimestre.png)
+-->
+
 
 ---
 
