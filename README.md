@@ -56,15 +56,24 @@
   **Test:** **Precision 0,559 · Recall 0,951 · F1 0,704 · AP 0,667 · ROC-AUC 0,628**.  
 - **Backtesting temporal (promedios):** **Precision 0,647 · Recall 0,686 · F1 0,651**.
 
-**Archivos clave exportados**
-- Métricas/tablas:  
-  `results/modelos_metricas.csv`, `results/hp_search_resumen.csv`, `results/hp_best_holdout_metrics.csv`,  
-  `results/best_metrics_Tuned-LogisticRegression_c16.csv`,  
-  `results/best_threshold_Tuned-LogisticRegression_c16.json`,  
-  `results/classification_report_Tuned-LogisticRegression_opt_c16.txt`
-- Figuras (ejemplos):  
-  `figs/pr_Tuned-LogisticRegression_c16.png`, `figs/pr_HGB.png`, `figs/roc_HGB.png`,  
-  `figs/cm_Tuned-LogisticRegression_050_c16.png`, `figs/cm_Tuned-LogisticRegression_opt_c16.png`
+### Archivos clave exportados
+
+- **Métricas / tablas**
+  - [`results/modelos_metricas.csv`](results/modelos_metricas.csv)
+  - [`results/hp_search_resumen.csv`](results/hp_search_resumen.csv)
+  - [`results/hp_best_holdout_metrics.csv`](results/hp_best_holdout_metrics.csv)
+  - [`results/best_metrics_Tuned-LogisticRegression_c16.csv`](results/best_metrics_Tuned-LogisticRegression_c16.csv)
+  - [`results/best_threshold_Tuned-LogisticRegression_c16.json`](results/best_threshold_Tuned-LogisticRegression_c16.json)
+  - [`results/classification_report_Tuned-LogisticRegression_opt_c16.txt`](results/classification_report_Tuned-LogisticRegression_opt_c16.txt)
+
+- **Figuras (ejemplos)**
+  - [`figs/pr_Tuned-LogisticRegression_c16.png`](figs/pr_Tuned-LogisticRegression_c16.png)
+  - [`figs/cm_Tuned-LogisticRegression_050_c16.png`](figs/cm_Tuned-LogisticRegression_050_c16.png)
+  - [`figs/cm_Tuned-LogisticRegression_opt_c16.png`](figs/cm_Tuned-LogisticRegression_opt_c16.png)
+  - [`figs/pr_HGB.png`](figs/pr_HGB.png)
+  - [`figs/roc_HGB.png`](figs/roc_HGB.png)
+  - [`figs/calibracion_reliability.png`](figs/calibracion_reliability.png)
+
 
 ### Resultados (vista rápida con imágenes)
 
