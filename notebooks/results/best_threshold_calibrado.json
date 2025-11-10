@@ -1,0 +1,10 @@
+{
+  "model": "Tuned-HistGradientBoostingClassifier",
+  "best_threshold": 0.3958747135217723,
+  "recall_target": 0.8,
+  "calibration": {
+    "brier": 0.23385975674870976,
+    "roc_auc": 0.6568739223123421,
+    "ap": 0.6847405999692453
+  }
+}

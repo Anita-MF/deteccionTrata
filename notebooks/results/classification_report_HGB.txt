@@ -1,0 +1,12 @@
+Modelo: HGB
+ROC-AUC: 0.659 | AP: 0.684
+Mejor umbral: 0.304
+
+              precision    recall  f1-score   support
+
+           0      0.680     0.224     0.337      2683
+           1      0.582     0.911     0.710      3179
+
+    accuracy                          0.597      5862
+   macro avg      0.631     0.567     0.524      5862
+weighted avg      0.627     0.597     0.539      5862

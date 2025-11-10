@@ -1,0 +1,25 @@
+﻿feature,importance_mean,importance_std
+cat__origen_institucion - 145,0.04961862966439973,0.002609596453614213
+num__trimestre,0.02935940953499865,0.002737337373544422
+num__mes_cos,0.028614273324248908,0.003373538174047247
+cat__situacion_Emergencia,0.011024601738916184,0.001623718140166946
+num__provincia_indec_id,0.009837332422876554,0.0013711213830779627
+num__anio,0.00896271205529583,0.0016139060503921369
+cat__origen_institucion - accion catolica,0.00496205662907534,0.0026150781562024536
+cat__origen_institucion,0.0034425338710890483,0.002398140919921044
+num__es_fin_semana,0.0030912235405314513,0.0007959372135877957
+num__mes_sin,0.0027984809608922246,0.0011783998734630871
+cat__origen_institucion - afip,0.001150384893751899,0.0014375770638486516
+cat__origen_institucion - comisaria vecinal 1a,0.0008356984332625439,0.0007879848023947095
+num__mes,0.00033921770294048637,0.0014470173614065825
+num__dia_semana,0.0002860552340965716,0.0009015862150843306
+cat__origen_institucion - comisaria de la ciudad de alderetes de la provincia de tucuman,0.00023228010905915753,0.001098422772319708
+cat__situacion_Urgencia,0.00016219282469673857,0.0005781521119125881
+"cat__origen_institucion - centro de salud de parana, entre rios",1.9473831036920243e-05,9.205860044318986e-05
+num__consultante_edad_aparente,0.0,0.0
+"cat__origen_institucion - comisaria 5 de villa fiorito, lomas de zamora",0.0,0.0
+cat__origen_institucion - asesoria general tutelar de caba,0.0,0.0
+cat__origen_institucion - asosiacion de las mujeres por los derechos humanos,-0.0004258535890554471,0.00048557530341640265
+"cat__origen_institucion - caj los robles, la rioja",-0.0008765362017776557,0.0013775423026690771
+cat__origen_ciudadano,-0.001249654848634396,0.001172653838466488
+cat__origen_institucion - asesoria de menores e incapaces n1 de necochea.,-0.001687129870917059,0.0008149162650642717

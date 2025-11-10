@@ -1,0 +1,31 @@
+feature,coef,coef_abs,signo,tipo
+cat__localidad_Córdoba,0.5299567101154424,0.5299567101154424,+,Top +
+cat__localidad_San Miguel de Tucumán,0.5194486266524896,0.5194486266524896,+,Top +
+cat__consultante_nacionalidad_sin descripcion,0.5000383965296855,0.5000383965296855,+,Top +
+cat__consultante_como_conocio_la_linea_Concurrió en otra oportunidad,0.4513178447276122,0.4513178447276122,+,Top +
+cat__consultante_provincia_neuqun,0.4462321386183412,0.4462321386183412,+,Top +
+cat__consultante_localidad_la plata,0.4053508543080781,0.4053508543080781,+,Top +
+cat__consultante_provincia_mendoza,0.3677648577676021,0.3677648577676021,+,Top +
+cat__consultante_provincia_chaco,0.36427297009141063,0.36427297009141063,+,Top +
+cat__consultante_localidad_san miguel de tucumn,0.3392318301671478,0.3392318301671478,+,Top +
+cat__consultante_localidad_resistencia,0.33136404286242394,0.33136404286242394,+,Top +
+cat__localidad_San Martín,0.32121936691681435,0.32121936691681435,+,Top +
+cat__consultante_provincia_santiago del estero,0.31775565343836737,0.31775565343836737,+,Top +
+cat__via_ingreso_llamada no pertinente,0.31579007699726996,0.31579007699726996,+,Top +
+cat__consultante_localidad_ushuaia,0.29882185530683997,0.29882185530683997,+,Top +
+cat__consultante_provincia_san juan,0.29157930869071746,0.29157930869071746,+,Top +
+cat__origen_ciudadano,-1.2884053051451105,1.2884053051451105,-,Top -
+cat__consultante_localidad_,-0.7623672481123348,0.7623672481123348,-,Top -
+cat__consultante_nacionalidad_uruguay,-0.7431655963382274,0.7431655963382274,-,Top -
+cat__consultante_localidad_ciudad autnoma de buenos aires,-0.5786893701892298,0.5786893701892298,-,Top -
+cat__consultante_localidad_rosario,-0.5137927402422917,0.5137927402422917,-,Top -
+cat__provincia_Río Negro,-0.5136028651203774,0.5136028651203774,-,Top -
+cat__via_ingreso_linea 149,-0.4959963525720034,0.4959963525720034,-,Top -
+cat__consultante_como_conocio_la_linea_Por publicidad en TV,-0.48414798497052897,0.48414798497052897,-,Top -
+cat__consultante_provincia_catamarca,-0.4818859436556293,0.4818859436556293,-,Top -
+cat__consultante_localidad_crdoba,-0.437729504523992,0.437729504523992,-,Top -
+cat__consultante_provincia_ro negro,-0.41147465048779147,0.41147465048779147,-,Top -
+cat__consultante_provincia_tucumn,-0.4084896323057582,0.4084896323057582,-,Top -
+cat__consultante_provincia_,-0.4082922138748611,0.4082922138748611,-,Top -
+cat__consultante_como_conocio_la_linea_Por publicidad en radio,-0.40257743744395247,0.40257743744395247,-,Top -
+cat__via_ingreso_linea 145,-0.39165242822889385,0.39165242822889385,-,Top -

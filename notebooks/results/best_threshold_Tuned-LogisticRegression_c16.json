@@ -1,0 +1,8 @@
+{
+  "model": "Tuned-LogisticRegression",
+  "criterion": "max F1 con recall ≥ 0.80",
+  "recall_target": 0.8,
+  "best_threshold": 0.32764131738771957,
+  "AP": 0.6672488444630176,
+  "ROC_AUC": 0.6277916704819658
+}

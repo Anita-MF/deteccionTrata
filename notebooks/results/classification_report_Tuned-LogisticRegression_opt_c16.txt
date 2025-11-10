@@ -1,0 +1,12 @@
+Modelo: Tuned-LogisticRegression
+Criterio: max F1 con recall ≥ 0.80
+Umbral óptimo: 0.328
+
+              precision    recall  f1-score   support
+
+           0      0.656     0.110     0.188      2683
+           1      0.559     0.951     0.704      3179
+
+    accuracy                          0.566      5862
+   macro avg      0.607     0.531     0.446      5862
+weighted avg      0.603     0.566     0.468      5862
